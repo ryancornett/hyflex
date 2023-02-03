@@ -37,7 +37,8 @@ h1, .subtitle {
 .title {
     background-color: var(--blue-primary);
     color: white;
-    height: 15vh;
+    height: auto;
+    padding-bottom: 0.5em;
 }
 
 .title.active {
@@ -152,15 +153,19 @@ nav > ul > li > a:hover {
   border-radius: 1%;
 }
 
+.close-container {
+  z-index: 1000;
+}
+
 .modal-close {
   color: #999;
   line-height: 50px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: fixed;
-  right: 6%;
+  right: 7%;
   text-align: center;
   top: 11%;
-  width: 70px;
+  width: 20px;
   text-decoration: none;
   transition: all ease 250ms;
 }
@@ -189,6 +194,16 @@ nav > ul > li > a:hover {
 
 .instructor-info {
   padding-top: 2em;
+  position: relative;
+}
+
+.course:nth-of-type(even) {
+  margin-left: 5em;
+}
+
+.course:nth-of-type(2), .course:nth-of-type(3), .course:nth-of-type(6), .course:nth-of-type(7) {
+  background-color: var(--gray-primary);
+  padding: 0 2em;
 }
 
 .first-last {
@@ -278,6 +293,7 @@ article {
 
 .instructor-info > img {
   border-radius: 50%;
+  border: solid 2px var(--blue-secondary);
   box-shadow: var(--kyae-dark) 0 4px 8px;
   margin: 2em, 0;
 }
@@ -418,8 +434,12 @@ aside > img {
     height: var(--social-height);
     width: var(--social-height);
     fill: var(--blue-tertiary);
+    transition: all ease-in-out 0.3s;
 }
 
+.social-media-links svg:hover {
+    fill: var(--blue-secondary);
+}
 
 
 

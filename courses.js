@@ -36,7 +36,7 @@ const courses = [
     
     {name: coursesList[1],
     days: daysList[1],
-    time: timesList[3],
+    time: timesList[4],
     syllabus: linksList[1].moses_geo,
     zoom: linksList[0].corbin,
     description: description.geometry,
@@ -69,7 +69,7 @@ const courses = [
     
     {name: coursesList[2],
     days: daysList[1],
-    time: times[3],
+    time: timesList[4],
     syllabus: linksList[1].lipps,
     zoom: linksList[0].clay,
     description: description.algebra,
@@ -78,6 +78,27 @@ const courses = [
     phone: phoneNumbers.clay
     },
     
+    {name: coursesList[3],
+    days: daysList[0],
+    time: timesList[1],
+    syllabus: linksList[1].cornettGra,
+    zoom: linksList[0].clay,
+    description: description.grammar,
+    instructor: "Ryan Cornett",
+    email: "ryan@laureladulted.org",
+    phone: phoneNumbers.clay
+    },
+
+    {name: coursesList[7],
+    days: `${daysList[1]} & ${daysList[3]}`,
+    time: timesList[2],
+    syllabus: linksList[1].newquist,
+    zoom: linksList[0].knox,
+    description: description.science,
+    instructor: "Terry Newquist",
+    email: "terry@laureladulted.org",
+    phone: phoneNumbers.knox
+    }
 ];
 
 
