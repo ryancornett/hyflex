@@ -190,6 +190,8 @@ nav > ul > li > a:hover {
 
 .course-name {
   font-size: 1.4em;
+  color: var(--kyae-dark);
+  margin-bottom: 0.25em;
 }
 
 .instructor-info {
@@ -213,6 +215,7 @@ nav > ul > li > a:hover {
 .days, .times {
   font-weight: bold;
   margin-bottom: 0.5em;
+  color: var(--blue-primary);
 }
 
 .join-display {

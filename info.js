@@ -1,6 +1,6 @@
-const coursesList = ["Number Sense", "Geometry", "Algebra", "Grammar", "RLA", "Reading", "Social Studies", "Science"];
+const coursesList = ["Number Sense", "Geometry", "Algebra", "Grammar", "Reasoning through Language Arts", "Reading", "Social Studies", "Science"];
 const daysList = ["Monday", "Tuesday", "Wednesday", "Thursday"];
-const timesList = ["9:00-10:30", "10:30-12:00", "2:30-4:00", "4:00-5:30", "5:00-6:30"];
+const timesList = ["9:00-10:30", "10:30-12:00", "2:30-4:00", "4:00-5:30", "4:30-6:00", "5:00-6:30"];
 const linksList = [
     {
         clay: "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09",
@@ -31,7 +31,11 @@ const description = {
     geometry: "In this class, you'll work on area, perimeter, surface area, and volume formulas. Plus, you'll look at data analysis concepts like mean, median, mode, range, and probability.",
     algebra: "In this class, you'll work on expressions, equations, inequalities, functions, and graphs.",
     grammar: "In this class, you'll learn the science of how Standard American English works. Better command of the language means better command of your audience.",
-    science: "This course will cover various science topics that are presented on the GED Science test.  The topics covered include:  Life Science, Physical Science, Earth Science."
+    rla: "In this class students will learn grammar, reading, and writing skills needed to successfully pass the RLA section of the GED.",
+    rlaSS: "By the end of this course, participants will understand social studies concepts, apply social studies concepts, read graphs and charts displaying social studies data, use reasoning, and interpret social studies information",
+    reading: "In this class, students will be introduced to various reading foundations and strategy skills to help them learn to read and improve their reading skills.",
+    science: "This course will cover various science topics that are presented on the GED Science test.  The topics covered include:  Life Science, Physical Science, Earth Science.",
+    socialStudies: "Students will exit this course with necessary skills for passing the GED Social Studies Test. Topics include civics and government, United States history, economics, world geography, and social studies practices."
 };
 
 const phoneNumbers = {

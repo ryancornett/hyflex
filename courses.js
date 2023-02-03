@@ -25,7 +25,7 @@ const courses = [
 
     {name: coursesList[1],
     days: `${daysList[2]} & ${daysList[3]}`,
-    time: times[1],
+    time: timesList[1],
     syllabus: linksList[1].chesnut,
     zoom: linksList[0].laurel,
     description: description.geometry,
@@ -36,7 +36,7 @@ const courses = [
     
     {name: coursesList[1],
     days: daysList[1],
-    time: timesList[4],
+    time: timesList[3],
     syllabus: linksList[1].moses_geo,
     zoom: linksList[0].corbin,
     description: description.geometry,
@@ -69,7 +69,7 @@ const courses = [
     
     {name: coursesList[2],
     days: daysList[1],
-    time: timesList[4],
+    time: timesList[5],
     syllabus: linksList[1].lipps,
     zoom: linksList[0].clay,
     description: description.algebra,
@@ -89,6 +89,50 @@ const courses = [
     phone: phoneNumbers.clay
     },
 
+    {name: coursesList[4],
+    days: `${daysList[0]} & ${daysList[2]}`,
+    time: timesList[3],
+    syllabus: linksList[1].martin,
+    zoom: linksList[0].knox,
+    description: description.rla,
+    instructor: "Della Martin",
+    email: "della.martin@knox.kyschools.us",
+    phone: phoneNumbers.knox
+    },
+
+    {name: coursesList[4],
+    days: `${daysList[0]} & ${daysList[1]}`,
+    time: timesList[3],
+    syllabus: linksList[1].gaines,
+    zoom: linksList[0].laurel,
+    description: description.rlaSS,
+    instructor: "Robert Gaines",
+    email: "robert@laureladulted.org",
+    phone: phoneNumbers.london
+    },
+
+    {name: coursesList[4],
+    days: daysList[3],
+    time: timesList[2],
+    syllabus: linksList[1].jones,
+    zoom: linksList[0].whitley,
+    description: description.reading,
+    instructor: "Kayla Jones",
+    email: "kayla.jones@whitley.kyschools.us",
+    phone: phoneNumbers.whitley
+    },
+
+    {name: coursesList[6],
+    days: `${daysList[0]} & ${daysList[1]}`,
+    time: timesList[3],
+    syllabus: linksList[1].gaines,
+    zoom: linksList[0].laurel,
+    description: description.rlaSS,
+    instructor: "Robert Gaines",
+    email: "robert@laureladulted.org",
+    phone: phoneNumbers.london
+    },
+
     {name: coursesList[7],
     days: `${daysList[1]} & ${daysList[3]}`,
     time: timesList[2],
@@ -98,6 +142,28 @@ const courses = [
     instructor: "Terry Newquist",
     email: "terry@laureladulted.org",
     phone: phoneNumbers.knox
+    },
+
+    {name: coursesList[6],
+    days: `${daysList[2]} & ${daysList[3]}`,
+    time: timesList[1],
+    syllabus: linksList[1].peters,
+    zoom: linksList[0].knox,
+    description: description.socialStudies,
+    instructor: "Austin Peters",
+    email: "austin.peters@knox.kyschools.us",
+    phone: phoneNumbers.knox
+    },
+
+    {name: coursesList[6],
+    days: daysList[2],
+    time: timesList[4],
+    syllabus: linksList[1].gibbins,
+    zoom: linksList[0].whitley,
+    description: description.rlaSS,
+    instructor: "Zac Gibbins",
+    email: "zac.gibbins@whitley.kyschools.us",
+    phone: phoneNumbers.whitley
     }
 ];
 
