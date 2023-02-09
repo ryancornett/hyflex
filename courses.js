@@ -111,7 +111,7 @@ const courses = [
     phone: phoneNumbers.london
     },
 
-    {name: coursesList[4],
+    {name: coursesList[5],
     days: daysList[3],
     time: timesList[2],
     syllabus: linksList[1].jones,
