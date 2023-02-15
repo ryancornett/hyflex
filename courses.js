@@ -36,8 +36,8 @@ const courses = [
     
     {name: coursesList[1],
     days: daysList[1],
-    time: timesList[3],
-    syllabus: linksList[1].moses_geo,
+    time: timesList[4],
+    syllabus: linksList[1].mosesGeo,
     zoom: linksList[0].corbin,
     description: description.geometry,
     instructor: "Erin Moses",
@@ -48,7 +48,7 @@ const courses = [
     {name: coursesList[2],
     days: daysList[0],
     time: timesList[1],
-    syllabus: linksList[1].moses_alg,
+    syllabus: linksList[1].mosesAlg,
     zoom: linksList[0].corbin,
     description: description.algebra,
     instructor: "Erin Moses",
@@ -69,7 +69,7 @@ const courses = [
     
     {name: coursesList[2],
     days: daysList[1],
-    time: timesList[5],
+    time: timesList[6],
     syllabus: linksList[1].lipps,
     zoom: linksList[0].clay,
     description: description.algebra,
@@ -102,7 +102,7 @@ const courses = [
 
     {name: coursesList[4],
     days: `${daysList[0]} & ${daysList[1]}`,
-    time: timesList[3],
+    time: timesList[4],
     syllabus: linksList[1].gaines,
     zoom: linksList[0].laurel,
     description: description.rlaSS,
@@ -124,7 +124,7 @@ const courses = [
 
     {name: coursesList[6],
     days: `${daysList[0]} & ${daysList[1]}`,
-    time: timesList[3],
+    time: timesList[4],
     syllabus: linksList[1].gaines,
     zoom: linksList[0].laurel,
     description: description.rlaSS,
@@ -135,7 +135,7 @@ const courses = [
 
     {name: coursesList[7],
     days: `${daysList[1]} & ${daysList[3]}`,
-    time: timesList[2],
+    time: timesList[3],
     syllabus: linksList[1].newquist,
     zoom: linksList[0].knox,
     description: description.science,
@@ -157,7 +157,7 @@ const courses = [
 
     {name: coursesList[6],
     days: daysList[2],
-    time: timesList[4],
+    time: timesList[5],
     syllabus: linksList[1].gibbins,
     zoom: linksList[0].whitley,
     description: description.rlaSS,

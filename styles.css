@@ -25,7 +25,7 @@ h3, h4, li, p, .contact-form {
     font-family: 'Poppins', sans-serif;
 }
 
-nav, section {
+section {
     width: 80%;
     margin: 0 auto;
 }
@@ -41,44 +41,44 @@ h1, .subtitle {
     padding-bottom: 0.5em;
 }
 
-.title.active {
-    background-color: white;
-    color: var(--blue-primary);
-}
-
 h1 {
   font-size: 4rem;
 }
 
-nav > ul {
-    list-style: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+.close-container {
+  display:none;
 }
 
-nav > ul > li > a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.25rem;
-    transition: all 0.5s ease;
-    margin: 0 2em;
+
+
+
+
+
+
+.content {
+  display: block;
+  color: orange;
+  padding: 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: #fbfbfb;
 }
 
-nav > ul > li > a:hover {
-    color: var(--blue-secondary);
-    transition: all 0.5s ease;
+button {
+  font-weight: 600;
 }
 
-.bg {
-  background-image: url("img/student-desk.jpg");
-  min-height: 55vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------MODAL SECTION------------------- */
@@ -87,8 +87,7 @@ nav > ul > li > a:hover {
   text-transform: uppercase;
   text-align: center;
   margin: 0.5em auto;
-  font-size: 3.5em;
-  /* border: solid 8px var(--blue-tertiary); */
+  font-size: 1.5em;
   border-radius: 3%;
   width: 100%;
   background-color: var(--kyae-green);
@@ -96,83 +95,7 @@ nav > ul > li > a:hover {
   box-shadow: 0 3px 5px black;
 }
 
-.interior {
-  display: flex;
-  justify-content: center;
-}
 
-.btn {
-  background-color: var(--blue-primary);
-  padding: 0.5em 1em;
-  margin: 0 0.5em;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color:white;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: inline-block;
-  transition: all ease-in-out 300ms;
-}
-
-.btn:hover {
-  background-color: var(--blue-secondary);
-  transition: all ease-in-out 300ms;
-}
-
-.modal-window {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-}
-
-.modal-window:target {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-window > div {
-  width: 90%;
-  height: 80vh;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  /* transform: translate(-50%, -50%); */
-  padding: 2em;
-  background: white;
-  overflow: scroll;
-  box-shadow: 0 0 10px black;
-  border-radius: 1%;
-}
-
-.close-container {
-  z-index: 1000;
-}
-
-.modal-close {
-  color: #999;
-  line-height: 50px;
-  font-size: 1.5rem;
-  position: fixed;
-  right: 7%;
-  text-align: center;
-  top: 11%;
-  width: 20px;
-  text-decoration: none;
-  transition: all ease 250ms;
-}
-
-.modal-close:hover {
-  color: black;
-}
 
 /* --------------------------------- COURSES */
 
@@ -245,45 +168,19 @@ nav > ul > li > a:hover {
   color: var(--kyae-dark);
 }
 
-
-
-
-
-
-
-
-
 section, article {
     width: 70vw;
     margin: 0 auto;
 }
 
 section {
-    /* display: grid;
-    grid-template-columns: 0.75fr minmax(auto, 700px) 1fr;
-    gap: 10px;
-    grid-auto-rows: minmax(400px, 500px); */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.screen {
-  background-color: var(--blue-tertiary);
-  display: flex;
-}
-
 #enroll {
   width: 20vw;
-}
-
-.screen {
-  box-shadow: 0 3px 10px black;
-}
-
-.screen > img {
-  max-width: 55%;
-  overflow: hidden;
 }
 
 article {
@@ -317,17 +214,8 @@ article {
   padding-top: 0.5em;
 }
 
-#hyflex {
-  display: flex;
-  justify-content: space-between;
-}
-
 .hyflex-info {
   flex: 1 1 30%;
-}
-
-.hyflex-info + .hyflex-info {
-  margin-left: 8em;
 }
 
 /* ---------- ABOUT OUR PROGRAMS ---------- */
@@ -369,10 +257,10 @@ aside > img {
 .contact-form {
     text-align: left;
     padding: 10px;
-    margin: 1rem 0;
+    margin: 1rem auto;
     background: var(--blue-primary);
     border-radius: 4px;
-    width: 30vw;
+    width: 70vw;
     border-radius: 2%;
     box-shadow: 0 3px 8px 2px rgb(139, 139, 139);
   }
@@ -433,6 +321,167 @@ aside > img {
   }
 
 .social-media-links svg {
+    --social-height: 50px;
+    height: var(--social-height);
+    width: var(--social-height);
+    fill: var(--blue-tertiary);
+    transition: all ease-in-out 0.3s;
+}
+
+footer {
+    background-color: var(--blue-primary);
+    color: white;
+    padding-bottom: 2rem;
+}
+
+
+
+.bottom-credit {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+
+#contact > img {
+  display: none;
+}
+
+.contact-cards {
+  display: flex;
+  font-size: 0.75rem;
+  width: 80%;
+  margin: 1rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.county-card {
+  flex: 1 1 180px;
+  margin-top: 1rem;
+}
+
+.to-top {
+  display: none;
+}
+
+
+
+
+
+
+@media (min-width: 750px) {
+
+  nav {
+    display: none;
+  }
+
+  .bg {
+    background-image: url("img/student-desk.jpg");
+    min-height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .modal-announce {
+    font-size: 3.5em;
+  }
+
+  .interior {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    background-color: var(--blue-primary);
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    /* width: 20%; */
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    transition: all ease-in-out 300ms;
+  }
+  
+  .btn:hover {
+    background-color: var(--blue-secondary);
+    transition: all ease-in-out 300ms;
+  }
+  
+  .modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window > div {
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+    padding: 2em;
+    background: white;
+    overflow: scroll;
+    box-shadow: 0 0 10px black;
+    border-radius: 1%;
+  }
+  
+  .close-container {
+    display: unset;
+    z-index: 1000;
+  }
+  
+  .modal-close {
+    color: #999;
+    line-height: 50px;
+    font-size: 1.5rem;
+    position: fixed;
+    right: 7%;
+    text-align: center;
+    top: 11%;
+    width: 20px;
+    text-decoration: none;
+    transition: all ease 250ms;
+  }
+  
+  .modal-close:hover {
+    color: black;
+  }
+
+  #hyflex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hyflex-info + .hyflex-info {
+    margin-left: 8em;
+  }
+
+  .contact-form {
+    width: 30vw;
+  }
+
+  .social-media-links svg {
     --social-height: 70px;
     height: var(--social-height);
     width: var(--social-height);
@@ -444,24 +493,11 @@ aside > img {
     fill: var(--blue-secondary);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: var(--blue-primary);
-    color: white;
-    padding-bottom: 2rem;
-}
-
-.contact-cards {
+  #contact > img {
+    display: block;
+  }
+  
+  .contact-cards {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
@@ -470,36 +506,31 @@ footer {
     padding-top: 2rem;
 }
 
-.bottom-credit {
-    text-align: center;
-    font-size: 0.8rem;
-    margin-top: 2rem;
-}
-
-.to-top {
-  position: fixed;
-  right: 2%;
-  bottom: 0;
-  z-index: 100;
-  height: 40px;
-  border: solid 4px var(--blue-secondary);
-  background-color: #333;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  transition: all ease-in-out 500ms;
-}
-
-.to-top > a {  
-  text-decoration: none;
-  color: white;
-  font-size: .85rem;
-}
-
-.visible {
-  opacity: 70%;
-  transition: all ease-in-out 500ms;
+  .to-top {
+    position: fixed;
+    right: 2%;
+    bottom: 0;
+    z-index: 100;
+    height: 40px;
+    border: solid 4px var(--blue-secondary);
+    background-color: #333;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    transition: all ease-in-out 500ms;
+  }
+  
+  .to-top > a {  
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+  }
+  
+  .visible {
+    opacity: 70%;
+    transition: all ease-in-out 500ms;
+  }
 }

@@ -1,9 +1,10 @@
 const coursesList = ["Number Sense", "Geometry", "Algebra", "Grammar", "Reasoning through Language Arts", "Reading", "Social Studies", "Science"];
 const daysList = ["Monday", "Tuesday", "Wednesday", "Thursday"];
-const timesList = ["9:00-10:30", "10:30-12:00", "2:30-4:00", "4:00-5:30", "4:30-6:00", "5:00-6:30"];
+const timesList = ["9:00-10:30", "10:30-12:00", "1:00-2:30", "2:30-4:00", "4:00-5:30", "4:30-6:00", "5:00-6:30"];
 const linksList = [
     {
         clay: "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09",
+        corbin: "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09",
         laurel: "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09",
         knox: "https://us02web.zoom.us/j/86233937397?pwd=bVhnSWF0NmF6SFRyYmhOSlE3bXlXdz09",
         whitley: "https://us06web.zoom.us/j/83660895039?pwd=NCtBUWNBUTJlazBUeHN0OW9jT2RBUT09"
