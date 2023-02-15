@@ -1,4 +1,4 @@
-const coursesList = ["Number Sense", "Geometry", "Algebra", "Grammar", "Reasoning through Language Arts", "Reading", "Social Studies", "Science"];
+const coursesList = ["Number Sense", "Geometry", "Algebra", "Grammar", "Language Arts", "Reading", "Social Studies", "Science"];
 const daysList = ["Monday", "Tuesday", "Wednesday", "Thursday"];
 const timesList = ["9:00-10:30", "10:30-12:00", "1:00-2:30", "2:30-4:00", "4:00-5:30", "4:30-6:00", "5:00-6:30"];
 const linksList = [

@@ -45,25 +45,16 @@ h1 {
   font-size: 4rem;
 }
 
+.interior > .btn {
+  display: none;
+}
+
 .close-container {
   display:none;
 }
 
 
 
-
-
-
-
-.content {
-  display: block;
-  color: orange;
-  padding: 0px 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  background-color: #fbfbfb;
-}
 
 button {
   font-weight: 600;
@@ -95,60 +86,58 @@ button {
   box-shadow: 0 3px 5px black;
 }
 
-
+.subject {
+  color: var(--blue-primary);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0 0.25rem 0;
+  font-size: 2rem;
+}
 
 /* --------------------------------- COURSES */
 
-.course-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.course {
-  flex: 1 1 30vw;
-  display: flex;
-  max-width: 40vw;
-  margin-bottom: 2em;;
-}
-
 .course-name {
-  font-size: 1.4em;
+  font-size: 1rem;
   color: var(--kyae-dark);
-  margin-bottom: 0.25em;
-}
-
-.instructor-info {
-  padding-top: 2em;
-  position: relative;
-}
-
-.course:nth-of-type(even) {
-  margin-left: 5em;
-}
-
-.course:nth-of-type(2), .course:nth-of-type(3), .course:nth-of-type(6), .course:nth-of-type(7) {
-  background-color: var(--gray-primary);
-  padding: 0 2em;
-}
-
-.first-last {
-  margin-top: 1em;
+  display: inline-block;
 }
 
 .days, .times {
   font-weight: bold;
-  margin-bottom: 0.5em;
+  font-size: 0.9rem;
   color: var(--blue-primary);
+  display: inline-block;
+  margin: 0 0 0.35rem 3rem;
 }
 
-.join-display {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.description {
+  font-size: 0.8rem;
+}
+
+.syllabus-link, .zoom-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0.35rem 3rem 0 0;
+}
+
+.instructor-info > img {
+  display: none;
+}
+
+.instructor-info {
+  display: flex;
+  justify-content: space-around;
+  margin: -1.5rem 0 1.5rem 0;
+  font-size: 0.75rem;
 }
 
 .display {
-  margin: 0.5em;
+  margin: -2rem 0;
+}
+
+.join-display {
+  display: flex;
+  flex-direction: column;
 }
 
 .inside-display > svg {
@@ -161,7 +150,7 @@ button {
 .inside-display {
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .display-info-text > h2 {
@@ -174,9 +163,13 @@ section, article {
 }
 
 section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section > .close-container {
+  visibility: hidden;
 }
 
 #enroll {
@@ -339,7 +332,7 @@ footer {
 .bottom-credit {
     text-align: center;
     font-size: 0.8rem;
-    margin-top: 2rem;
+    margin: 2rem 3.5rem 0 3.5rem;
 }
 
 #contact > img {
@@ -392,12 +385,15 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  .interior > .btn {
+    display: unset;
+  }
   
   .btn {
     background-color: var(--blue-primary);
     padding: 0.5em 1em;
     margin: 0 0.5em;
-    /* width: 20%; */
     border-radius: 0.5rem;
     text-decoration: none;
     color:white;
@@ -466,6 +462,87 @@ footer {
   
   .modal-close:hover {
     color: black;
+  }
+
+  .subject {
+    display: none;
+  }
+
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .course {
+    flex: 1 1 30vw;
+    display: flex;
+    max-width: 40vw;
+    margin-bottom: 2em;;
+  }
+
+  .course:nth-of-type(even) {
+    margin-left: 5em;
+  }
+  
+  .course:nth-of-type(2), .course:nth-of-type(3), .course:nth-of-type(6), .course:nth-of-type(7) {
+    background-color: var(--gray-primary);
+    padding: 0 2em;
+  }
+
+  .course-name {
+    font-size: 1.4rem;
+    color: var(--kyae-dark);
+    margin-bottom: 0.25em;
+  }
+  
+  .instructor-info {
+    padding-top: 2em;
+    position: relative;
+  }
+    
+  .first-last {
+    margin-top: 1rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .syllabus-link, .zoom-link {
+    display: block;
+    font-size: 1rem;
+    margin: 0.35rem 3rem 0 0;
+  }
+
+  .days, .times {
+    margin: 0 0 0.25em 0;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .instructor-info > img {
+    display: unset;
+  }
+
+  .instructor-info {
+    display: unset;
+    font-size: 1rem;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .join-display {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inside-display {
+    font-size: 1.1rem;
   }
 
   #hyflex {
