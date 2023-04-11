@@ -34,393 +34,90 @@
 
             <div class="modal-container">
                 <div class="interior">
-                    <a href="#open-math" class="btn">Mathematics</a>
-                    <a href="#open-rla" class="btn">Language Arts</a>
-                    <a href="#open-other" class="btn">Science/Social Studies</a>
-                    <a href="#open-info" class="btn">Ways to Join In</a>
+                    <button id="open-math" class="btn">Mathematics</button>
+                    <button id="open-rla" class="btn">Language Arts</button>
+                    <button id="open-other" class="btn">Other Classes</button>
+                    <button id="open-ways" class="btn">Ways to Join In</button>
                 </div>
             
-                <div id="open-math" class="modal-window">
-                    <div>
-                        <div class="close-container">
-                            <a href="#" title="Close" class="modal-close">X</a>
-                        </div>
-                        <h2 class="subject">Math</h2>
-                        <div class="course-container">
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days" id="days"></p>
-                                    <p class="times" id="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link" id="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/marks.jpg" width="150" height= "150" alt="Instructor Mark Sizemore" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/jenniferl.jpg" width="150" height= "150" alt="Instructor Jennifer Ledford" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/rachaelc.jpg" width="150" height= "150" alt="Instructor Rachael Chesnut" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/erinm.jpg" width="150" height= "150" alt="Instructor Erin Moses" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/erinm.jpg" width="150" height= "150" alt="Instructor Erin Moses" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/ryanc.jpg" width="150" alt="Instructor Ryan Cornett" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-        
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/rodneyl.jpg" width="150" alt="Instructor Rodney Lipps" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
+                <dialog id='math-modal'>
+                    <h5 class='close-math close-dialog'>X</h5>
+                    <div class="math-container"></div>
+                  </dialog>
 
+                  <dialog id='rla-modal'>
+                    <h5 class='close-rla close-dialog'>X</h5>
+                    <div class="rla-container"></div>
+                  </dialog>
 
-                            
-                        </div>
-                    </div>
-                </div>
+                  <dialog id='other-modal'>
+                    <h5 class='close-other close-dialog'>X</h5>
+                    <div class="other-container"></div>
+                  </dialog>
 
-                <div id="open-rla" class="modal-window">
-                    <div>
-                        <div class="close-container">
-                            <a href="#" title="Close" class="modal-close">X</a>
-                        </div>
-                        <h2 class="subject">Language Arts</h2>
-                        <div class="course-container">
-                             <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
+                  <dialog id='ways-modal'>
+                    <h5 class='close-other close-dialog' id="ways-close">X</h5>
+                    <div class="join-display ways-container">
+                        <div class="display">
+                            <div class="inside-display">
+                                <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21V10C12 7.23858 9.76142 5 7 5H3V18.7143" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 19H7.5C10.5 19 11 20 12 21" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 21V10C12 7.23858 14.2386 5 17 5H21V18.7143" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 19H16.5C13.5 19 13 20 12 21" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <div class="display-info-text">            
+                                    <h2>In-Person</h2>
+                                    <p class="join-class-text">Traditional attendance in our learning center with our instructors is still an option and is highly encouraged!</p>
                                 </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/ryanc.jpg" width="150" alt="Instructor Ryan Cornett" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Della Martin" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Robert Gaines" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="img/kaylaj.jpg" width="150" alt="Instructor Kayla Jones" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div id="open-other" class="modal-window">
-                    <div>
-                        <div class="close-container">
-                            <a href="#" title="Close" class="modal-close">X</a>
-                        </div>
-                        <h2 class="subject">Science & Social Studies</h2>
-                        <div class="course-container">
-                             
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Robert Gaines" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-                            
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Terry Newquist" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Austin Peters" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-
-                            <div class="course">
-                                <div class="course-info">
-                                    <h4 class="course-name">ph</h4>
-                                    <p class="days"></p>
-                                    <p class="times"></p>
-                                    <p class="description"></p>
-                                    <p class="syllabus-link"></p>
-                                    <p class="zoom-link"></p>
-                                </div>
-        
-                                <div class="instructor-info">
-                                    <img src="https://picsum.photos/500" width="150" alt="Instructor Zac Gibbins" />
-                                    <h4 class="first-last">ph</h4>
-                                    <p class="email-address"></p>
-                                    <p class="phone-number"></p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-            <section>
-
-                <div id="open-info" class="modal-window">
-                    <div>
-                        <div class="close-container">
-                            <a href="#" title="Close" class="modal-close">X</a>
-                        </div>
-
-                <div class="join-display">
-                    <div class="display">
-                        <div class="inside-display">
-                            <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 21V10C12 7.23858 9.76142 5 7 5H3V18.7143" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M3 19H7.5C10.5 19 11 20 12 21" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 21V10C12 7.23858 14.2386 5 17 5H21V18.7143" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 19H16.5C13.5 19 13 20 12 21" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            <div class="display-info-text">            
-                                <h2>In-Person</h2>
-                                <p class="join-class-text">Traditional attendance in our learning center with our instructors is still an option and is highly encouraged!</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="display">
-                        <div class="inside-display">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V8.5" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7 18C7 16.3431 5.65685 15 4 15" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 18C10 14.6863 7.31371 12 4 12" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4 18L4 18.01" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            
-                            </svg>
-                            <div class="display-info-text">
-                                <h2>Virtual</h2>
-                                <p class="join-class-text">Need to join a class at home or elsewhere on your device? Now you can! Our four partner counties have several options.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="display">
-                        <div class="inside-display">
-                            <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C10.9232 4 9.90314 4.24315 8.99181 4.67753C4.36697 6.88194 6.63951 13.225 9.67866 17.3496L12 20.5L14.3213 17.3496C17.3605 13.225 19.633 6.88194 15.0082 4.67753C14.0969 4.24315 13.0768 4 12 4Z" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="12" cy="10" r="1" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            <div class="display-info-text">
-                                <h2>Remote</h2>
-                                <p class="join-class-text">Want the learning center experience with a class taught in a different county? Come to our classroom and join remotely!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="display">
-                        <div class="inside-display">
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="3" width="18" height="18" rx="9" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 12L12 8" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 12L17 12" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                        <div class="display">
+                            <div class="inside-display">
+                                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V8.5" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 18C7 16.3431 5.65685 15 4 15" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 18C10 14.6863 7.31371 12 4 12" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 18L4 18.01" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                
                                 </svg>
                                 <div class="display-info-text">
-                                    <h2>Recordings</h2>
-                                    <p class="join-class-text">If you miss a class (and we understand that happens occasionally), then you can watch the recording. However, plan to join live as often as possible!</p>
+                                    <h2>Virtual</h2>
+                                    <p class="join-class-text">Need to join a class at home or elsewhere on your device? Now you can! Our four partner counties have several options.</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <div class="inside-display">
+                                <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4C10.9232 4 9.90314 4.24315 8.99181 4.67753C4.36697 6.88194 6.63951 13.225 9.67866 17.3496L12 20.5L14.3213 17.3496C17.3605 13.225 19.633 6.88194 15.0082 4.67753C14.0969 4.24315 13.0768 4 12 4Z" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="1" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <div class="display-info-text">
+                                    <h2>Remote</h2>
+                                    <p class="join-class-text">Want the learning center experience with a class taught in a different county? Come to our classroom and join remotely!</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="display">
+                            <div class="inside-display">
+                                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="18" height="18" rx="9" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12L12 8" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12L17 12" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div class="display-info-text">
+                                        <h2>Recordings</h2>
+                                        <p class="join-class-text">If you miss a class (and we understand that happens occasionally), then you can watch the recording. However, plan to join live as often as possible!</p>
+                                    </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-           </section>
+                  </dialog>
 
+            </div>
 
             <div id="hyflex-anchor">
                 <h2 id="hyflex-title">What HyFlex Is</h2>

@@ -45,28 +45,53 @@ h1 {
   font-size: 4rem;
 }
 
-.interior > .btn {
-  display: none;
-}
-
-.close-container {
-  display:none;
-}
-
-
-
-
 button {
   font-weight: 600;
 }
 
+.btn, .close-dialog {
+  cursor: pointer;
+}
 
+dialog {
+ margin: auto;
+ padding: 3rem;
+ border-radius: 10px;
+ box-shadow: 0px 2px 8px black;
+}
 
+dialog::backdrop {
+  background: rgba(50, 50, 50, 0.75);
+}
 
+.close-dialog {
+  position: fixed;
+  left: 85%;
+  font-size: 1.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 300ms ease;
+}
 
+.close-dialog:hover {
+  color: var(--blue-primary);
+  filter: drop-shadow(0 3px 5px var(--blue-tertiary));
+  transition: all 300ms ease;
+}
 
+#ways-modal {
+  overflow: hidden;
+}
 
+#ways-close {
+  left: 88%;
+}
 
+.course {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 
 
@@ -86,6 +111,27 @@ button {
   box-shadow: 0 3px 5px black;
 }
 
+.interior {
+  display: flex;
+  justify-content: center;
+}
+  
+.btn {
+  background-color: var(--blue-primary);
+  padding: 0.5em 0.5em;
+  margin: 0.5em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  transition: all ease-in-out 300ms;
+}
+
+.btn:hover {
+  background-color: var(--blue-secondary);
+  transition: all ease-in-out 300ms;
+}
+
 .subject {
   color: var(--blue-primary);
   text-transform: uppercase;
@@ -97,27 +143,85 @@ button {
 /* --------------------------------- COURSES */
 
 .course-name {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--kyae-dark);
+  display: inline-block;
+  margin: 0;
+}
+
+.course-info, .course-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+
+.days, .time {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--blue-primary);
   display: inline-block;
 }
 
-.days, .times {
+.syllabus > a, .zoom > a {
   font-weight: bold;
-  font-size: 0.9rem;
-  color: var(--blue-primary);
   display: inline-block;
-  margin: 0 0 0.35rem 3rem;
+  font-size: 1.1rem;
+  color: var(--blue-primary);
+  transition: all 300ms ease;
+}
+
+.syllabus > a:hover, .zoom > a:hover {
+  color: var(--kyae-dark);
+  transition: all 300ms ease;
+}
+
+.syllabus > a:visited, .zoom > a:visited {
+  color: var(--blue-secondary);
+}
+
+.syllabus > a:visited:hover, .zoom > a:visited:hover {
+  color: var(--kyae-dark);
+  transition: all 300ms ease;
 }
 
 .description {
-  font-size: 0.8rem;
+  max-width: 65ch;
+  margin-left: 10%;
 }
 
-.syllabus-link, .zoom-link {
-  display: inline-block;
-  font-size: 0.9rem;
-  margin: 0.35rem 3rem 0 0;
+.profile {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  margin-bottom: 6rem;
+}
+
+.picture {
+  max-height: 100px;
+  grid-area: 1 / 1 / 3 / 2;
+  margin: 1rem auto 0 auto;
+}
+
+.instructor {
+  grid-area: 1 / 2 / 3 / 3;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.email {
+  grid-area: 2 / 2 / 3 / 3;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.phone {
+  grid-area: 3 / 2 / 4 / 3;
+  padding: 0;
 }
 
 .instructor-info > img {
@@ -180,10 +284,6 @@ article {
     margin: 2.5em auto;
 }
 
-.course-info {
-  margin: 2em;
-}
-
 .instructor-info > img {
   border-radius: 50%;
   border: solid 2px var(--blue-secondary);
@@ -197,7 +297,7 @@ article {
   background: linear-gradient(var(--kyae-dark), var(--blue-secondary) );
   box-shadow: 0 3px 10px black;
   padding: 1em;
-  margin-top: 5em;
+  margin-top: 3em;
   color: white;
 }
 
@@ -362,7 +462,7 @@ footer {
 
 
 
-@media (min-width: 750px) {
+@media (min-width: 913px) {
 
   nav {
     display: none;
@@ -381,31 +481,8 @@ footer {
     font-size: 3.5em;
   }
 
-  .interior {
-    display: flex;
-    justify-content: center;
-  }
-
-  .interior > .btn {
-    display: unset;
-  }
-  
   .btn {
-    background-color: var(--blue-primary);
-    padding: 0.5em 1em;
-    margin: 0 0.5em;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color:white;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: inline-block;
-    transition: all ease-in-out 300ms;
-  }
-  
-  .btn:hover {
-    background-color: var(--blue-secondary);
-    transition: all ease-in-out 300ms;
+    font-size: 1.25rem;
   }
   
   .modal-window {
@@ -441,32 +518,6 @@ footer {
     box-shadow: 0 0 10px black;
     border-radius: 1%;
   }
-  
-  .close-container {
-    display: unset;
-    z-index: 1000;
-  }
-  
-  .modal-close {
-    color: #999;
-    line-height: 50px;
-    font-size: 1.5rem;
-    position: fixed;
-    right: 7%;
-    text-align: center;
-    top: 11%;
-    width: 20px;
-    text-decoration: none;
-    transition: all ease 250ms;
-  }
-  
-  .modal-close:hover {
-    color: black;
-  }
-
-  .subject {
-    display: none;
-  }
 
   .course-container {
     display: flex;
@@ -490,9 +541,14 @@ footer {
   }
 
   .course-name {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     color: var(--kyae-dark);
     margin-bottom: 0.25em;
+  }
+
+  .close-dialog {
+    left: 70%;
+    transition: all 300ms ease;
   }
   
   .instructor-info {
@@ -503,23 +559,7 @@ footer {
   .first-last {
     margin-top: 1rem;
   }
-  
-  .description {
-    font-size: 0.9rem;
-  }
-  
-  .syllabus-link, .zoom-link {
-    display: block;
-    font-size: 1rem;
-    margin: 0.35rem 3rem 0 0;
-  }
-
-  .days, .times {
-    margin: 0 0 0.25em 0;
-    display: block;
-    font-size: 1rem;
-  }
-
+ 
   .instructor-info > img {
     display: unset;
   }
