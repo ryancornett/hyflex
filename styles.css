@@ -78,14 +78,6 @@ dialog::backdrop {
   transition: all 300ms ease;
 }
 
-#ways-modal {
-  overflow: hidden;
-}
-
-#ways-close {
-  left: 88%;
-}
-
 .course {
   width: 70vw;
   display: flex;
@@ -237,8 +229,13 @@ dialog::backdrop {
   font-size: 0.75rem;
 }
 
+#ways-modal {
+  width: auto;
+  overflow: hidden;
+}
+
 .display {
-  margin: -2rem 0;
+  margin: -0.5rem 0;
 }
 
 .join-display {
@@ -247,10 +244,9 @@ dialog::backdrop {
 }
 
 .inside-display > svg {
-  --display-dimension: 300px;
+  --display-dimension: 170px;
   height: var(--display-dimension);
   width: var(--display-dimension);
-  margin: -3em 0.5em -3em 0;
 }
 
 .inside-display {
@@ -441,14 +437,12 @@ footer {
     justify-content: space-around;
   }
 
-  .join-display {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .inside-display {
+    font-size: 1rem;
   }
 
-  .inside-display {
-    font-size: 1.1rem;
+  #ways-modal {
+    max-width: 50vw;
   }
 
   #hyflex {
