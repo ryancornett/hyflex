@@ -488,7 +488,6 @@ footer {
     bottom: 0;
     z-index: 10000;
     height: 40px;
-    border: solid 4px var(--blue-secondary);
     background-color: #333;
     opacity: 0;
     display: flex;
