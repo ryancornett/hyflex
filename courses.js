@@ -8,7 +8,7 @@ const COURSE01 = new Course("Number Sense", "Monday & Tuesday", "9:00-10:00", "h
 
 const COURSE02 = new Course("Algebra", "Tuesday", "5:00-6:30", "https://docs.google.com/document/d/1WYkF4sSxJ9EgesBxfhVLGHaJ3iD9ZdIB/edit?usp=share_link&ouid=104017723111487459394&rtpof=true&sd=true", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", "In this class, you'll work on expressions, equations, inequalities, functions, and graphs.", "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", "(606) 599-1230");
 
-const COURSE03 = new Course("Math Foundations", "Wednesday", "10:30-12:00", "https://docs.google.com/document/d/12AWYyoIoSb8FPdp5ccw2wBdIlJfXGUzW", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", "This course will introduce learners to the concepts and skills necessary to progress to the GED mathematics exam or improve applied mathematics skills for the workforce or post-secondary education.", "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379");
+const COURSE03 = new Course("Math Foundations", "Wednesday", "10:30-12:00", "https://docs.google.com/document/d/12AWYyoIoSb8FPdp5ccw2wBdIlJfXGUzW", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", "This course will introduce learners to the concepts and skills necessary to progress to the GED mathematics exam or improve applied mathematics skills for the workforce or post-secondary education. <p style='color:red; font-weight:200; font-size: 0.8rem'><b>No class May 10 or May 17</b></p>", "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379");
 
 const COURSE04 = new Course("Geometry", "Thursday", "1:00-2:30", "https://docs.google.com/document/d/1EEQ88RKRlLGmUWX7I-w4Wm7YQC5TJVCAS_ECEC-n9Zc", "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09", "In this class, you'll work on area, perimeter, surface area, and volume formulas. Plus, you'll look at data analysis concepts like mean, median, mode, range, and probability.", "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", "(606) 878-9134");
 
@@ -65,7 +65,7 @@ for (let i = 0; i < subject.length; i++) {
     linksDiv.appendChild(zoomLink);
     let description = document.createElement('span');
     description.setAttribute('class', 'description');
-    description.textContent = subject[i].description;
+    description.innerHTML = subject[i].description;
     parent.appendChild(description);
     let profileDiv = document.createElement('div');
     profileDiv.setAttribute('class', 'profile');
