@@ -71,4 +71,4 @@ WAYS_BUTTON.addEventListener('click', () => {
 
 let currentYear = new Date().getFullYear();
 let credit = document.getElementById('bottom-credit');
-credit.innerHTML = "Copyright &copy; " + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.";
+credit.innerHTML = "Copyright &copy; " + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br> Website design by <a href='http://ryancornett.com' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";
