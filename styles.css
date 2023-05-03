@@ -112,6 +112,7 @@ dialog::backdrop {
   background-color: var(--blue-primary);
   padding: 0.5em 0.5em;
   margin: 0.5em;
+  border: none;
   border-radius: 0.5rem;
   text-decoration: none;
   color:white;
