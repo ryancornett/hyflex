@@ -108,6 +108,10 @@ let timer = document.getElementById('timer');
 
 // Set the initial time to 45 minutes (in seconds)
 let timeLeft = 45 * 60;
+let shouldDecrement = true;
+
+const MODAL = document.getElementById('modal');
+const OKAY = document.getElementById('okay');
 
 // Update the timer every second
 let countdown = setInterval(function() {
@@ -118,21 +122,39 @@ let countdown = setInterval(function() {
   // Display the time left
   timer.innerHTML = "Time Remaining: " + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
 
-  // Decrement the time left
-  timeLeft--;
-
-  if (timeLeft === (14.95 *60)) {
+  // Decrement the time left only if the flag is true
+  if (shouldDecrement) {
+    timeLeft--;
+  }
+  let timeOnResume = 0;
+  let alertText = document.getElementById('alert-text')
+  OKAY.addEventListener('click', function() {
+    timeLeft = timeOnResume;
+    MODAL.style.visibility = 'hidden';
+    MODAL.close();
+    shouldDecrement = true;
+  });
+  
+  if (timeLeft === (15 *60)) {
+    shouldDecrement = false;
+    timeOnResume = (14.95 *60);
     timer.classList.add('yellow-time');
-    alert('You have less than 15 minutes remaining.');
+    MODAL.showModal();
+    MODAL.style.visibility = 'visible';
+    alertText.textContent = 'You have less than 15 minutes remaining.';
   }
 
-  if (timeLeft === (4.95 *60)) {
+  if (timeLeft === (5 *60)) {
+    shouldDecrement = false;
+    timeOnResume = (4.95 *60);
     timer.classList.add('red-time');
-    alert('You have less than 5 minutes remaining.');
+    MODAL.showModal();
+    MODAL.style.visibility = 'visible';
+    alertText.textContent = 'You have less than 5 minutes remaining.';
   }
 
   // If the time is up, disable the textarea and stop the timer
-  if (timeLeft < -1) {
+  if (timeLeft <= 0) {
     clearInterval(countdown);
     timer.textContent = "Time remaining: 0:00";
     timer.classList.remove('red-time');

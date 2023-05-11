@@ -13,17 +13,21 @@ body {
     --fs-300: 0.85rem;
     --icon: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+    height: 100vh;
+    background-color: var(--blue-900);
 }
 
 .container {
     display: flex;
     width: 100%;
+    background-color: white;
     height: 85vh;
   }
 
 textarea {
     border: none;
-    background-color: transparent;
+    background-color: white;
     outline: none;
 }
 
@@ -225,4 +229,27 @@ textarea {
 .nav-btn:nth-child(odd) {
     border-left: solid 2px white;
     border-right: solid 2px white;
+}
+
+#modal {
+    isolation: isolate;
+    z-index: 99;
+    visibility: hidden;
+    height: 20vh;
+    width: 40vw;
+    vertical-align: middle;
+    margin: auto;
+    background-color: white;
+    border: solid 2px var(--blue-900);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#okay {
+    cursor: pointer;
+    color: var(--blue-900);
+    text-align: center;
+    font-weight: bold;
 }
