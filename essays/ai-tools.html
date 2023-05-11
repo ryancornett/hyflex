@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mock GED RLA Extended Response</title>
-        <meta name="description" content="Mock GED RLA Extended Response">
+        <title>Language Arts Essay Practice</title>
+        <meta name="description" content="Language Arts Essay Practice">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/essay.css">
-    </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <div class="timer-wrapper">
             <p>Reasoning through Language Arts - Candidate Name</p>
             <div class="time">
@@ -28,22 +19,27 @@
             <div class="container">
             <div class="info-wrapper">
                 <div class="tabs">
-                <span class="info-btn" id="instructions">Instructions</span>
-                <span class="info-btn" id="article-one">Article One</span>
-                <span class="info-btn" id="article-two">Article Two</span>
+                    <span class="info-btn active" id="instructions">Instructions</span>
+                    <span class="info-btn" id="article-one">Article One</span>
+                    <span class="info-btn" id="article-two">Article Two</span>
+                </div>
+                <div class="article">
+
                 </div>
             </div>
             <div class="essay-wrapper">
+            <div class="edit-buttons">
+                <div class="edit-btn" id="cut"><img src="/img/icon-cut.png" class="icon" id="icon-cut" alt="Cut icon" />Cut</div>
+                <div class="edit-btn" id="copy"><img src="/img/icon-copy.png" class="icon" alt="Copy icon" />Copy</div>
+                <div class="edit-btn" id="paste"><img src="/img/icon-paste.png" class="icon" alt="Paste icon" />Paste</div>
+                <div class="edit-btn" id="undo"><img src="/img/icon-undo.png" class="icon" alt="Undo icon" />Undo</div>
+                <div class="edit-btn" id="redo"><img src="/img/icon-redo.png" class="icon" alt="Redo icon" />Redo</div>
+            </div>
+
+            
                 <fieldset>
                 <textarea spellcheck="false" name="essay" id="essay" cols="30" rows="10"></textarea>
                 </fieldset>
-                <div class="edit-buttons">
-                    <div class="edit-btn" id="cut"><img src="/img/icon-cut.png" class="icon" id="icon-cut" alt="Cut icon" />Cut</div>
-                    <div class="edit-btn" id="copy">Copy</div>
-                    <div class="edit-btn" id="paste">Paste</div>
-                    <div class="edit-btn" id="undo"><img src="/img/icon-undo.png" class="icon" alt="Undo icon" />Undo</div>
-                    <div class="edit-btn" id="redo"><img src="/img/icon-redo.png" class="icon" alt="Redo icon" />Redo</div>
-                </div>
                 </div>
             </div>
 
@@ -53,8 +49,9 @@
                 <div class="nav-btn"><img src="/img/icon-nav.png" class="icon white-icon" alt="Navigator icon" />Navigator</div>
                 <div class="nav-btn"><img src="/img/icon-next.png" class="icon white-icon" alt="Next icon" />Next</div>
             </div>
+            <div id="essay-id" class="ai-tools"></div>
         </footer>
         
-        <script src="../scripts/essay.js" async defer></script>
+        <script src="../scripts/essay.js" type="module" async defer></script>
     </body>
 </html>

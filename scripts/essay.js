@@ -121,24 +121,37 @@ let countdown = setInterval(function() {
   // Decrement the time left
   timeLeft--;
 
+  if (timeLeft === (14.95 *60)) {
+    timer.classList.add('yellow-time');
+    alert('You have less than 15 minutes remaining.');
+  }
+
+  if (timeLeft === (4.95 *60)) {
+    timer.classList.add('red-time');
+    alert('You have less than 5 minutes remaining.');
+  }
+
   // If the time is up, disable the textarea and stop the timer
-  if (timeLeft < 0) {
+  if (timeLeft < -1) {
     clearInterval(countdown);
-    timer.textContent = "0:00";
+    timer.textContent = "Time remaining: 0:00";
+    timer.classList.remove('red-time');
+    timer.classList.remove('yellow-time');
+    alert('Please use the onscreen tools to copy your essay. Paste it in an email field and send it to your instructor.');
     textarea.disabled = true;
   }
 }, 1000);
 
 // Disable cut, copy, and paste keyboard shortcuts
 document.addEventListener('keydown', function(event) {
-  if (event.ctrlKey && ['c', 'x', 'v'].indexOf(event.key.toLowerCase()) !== -1) {
+  if (event.ctrlKey && ['a', 'c', 'x', 'v', 'y', 'z'].indexOf(event.key.toLowerCase()) !== -1) {
     event.preventDefault();
   }
 });
 
 // Disable cut, copy, and paste context menu
 document.addEventListener('contextmenu', function(event) {
-  if (event.target.closest('#essay')) {
+  if (event.target.closest('#essay') || event.target.closest('.article')) {
     event.preventDefault();}
   });
 
@@ -178,3 +191,44 @@ function pasteSelection() {
     textarea.focus();
   });
 }
+
+// *********************** Populate prompt and article windows ****************
+
+import { INSTRUCTIONS, ITEMS } from "./items.js";
+
+let itemHolder = document.querySelector('.article');
+
+let instructionsTab = document.getElementById('instructions');
+let articleOneTab = document.getElementById('article-one');
+let articleTwoTab = document.getElementById('article-two');
+let essayId = document.querySelector('#essay-id');
+
+var i = 0;
+if (essayId.classList.contains('mobile-devices')) {
+  i = 1; }
+  else if (essayId.classList.contains('ai-tools')) {
+    i = 2;}
+  else {};
+itemHolder.innerHTML = `${INSTRUCTIONS} <br> ${ITEMS[i].prompt}`;
+
+instructionsTab.addEventListener('click', function() {
+  instructionsTab.classList.add('active');
+  articleOneTab.classList.remove('active');
+  articleTwoTab.classList.remove('active');
+  itemHolder.innerHTML = `${INSTRUCTIONS} <br> ${ITEMS[i].prompt}`;
+  console.log("instruct");
+})
+
+articleOneTab.addEventListener('click', function() {
+  articleOneTab.classList.add('active');
+  instructionsTab.classList.remove('active');
+  articleTwoTab.classList.remove('active');
+  itemHolder.innerHTML = `<h3>${ITEMS[i].title_one}</h3><h4>by ${ITEMS[i].author_one}</h4>${ITEMS[i].article_one}`;
+})
+
+articleTwoTab.addEventListener('click', function() {
+  articleTwoTab.classList.add('active');
+  instructionsTab.classList.remove('active');
+  articleOneTab.classList.remove('active');
+  itemHolder.innerHTML = `<h3>${ITEMS[i].title_two}</h3><h4>by ${ITEMS[i].author_two}</h4>${ITEMS[i].article_two}`;
+})
