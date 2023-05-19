@@ -55,7 +55,7 @@ button {
 
 dialog {
  margin: auto;
- padding: 3rem;
+ padding: 2.5rem;
  border-radius: 10px;
  box-shadow: 0px 2px 8px black;
 }
@@ -189,7 +189,7 @@ dialog::backdrop {
   grid-template-columns: 3fr 3fr;
   grid-template-rows: 2fr 2fr 1fr;
   grid-auto-columns: 1fr;
-  gap: 1px 1px;
+  gap: 2px 2px;
   grid-auto-flow: row;
   margin: 1rem 0 5rem 0;
 }
@@ -211,12 +211,14 @@ dialog::backdrop {
 .email {
   grid-area: 2 / 2 / 3 / 3;
   margin-top: 2rem;
+  margin-left:0.25rem;
   padding: 0;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
 }
 
 .phone {
   grid-area: 3 / 2 / 4 / 3;
+  font-size: 0.85rem;
   padding: 0;
 }
 
@@ -233,11 +235,10 @@ dialog::backdrop {
 
 #ways-modal {
   width: auto;
-  overflow: hidden;
 }
 
 .display {
-  margin: -0.5rem 0;
+  margin: 0;
 }
 
 .join-display {
@@ -245,8 +246,12 @@ dialog::backdrop {
   flex-direction: column;
 }
 
+.join-class-text {
+  font-size: 0.75rem;
+}
+
 .inside-display > svg {
-  --display-dimension: 170px;
+  --display-dimension: 125px;
   height: var(--display-dimension);
   width: var(--display-dimension);
 }
@@ -254,11 +259,12 @@ dialog::backdrop {
 .inside-display {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .display-info-text > h2 {
   color: var(--kyae-dark);
+  font-size: 1.125rem;
 }
 
 .display-info-text:last-of-type {
@@ -311,7 +317,7 @@ aside {
 }
 
 aside > img {
-  width:100%;
+  width: 100%;
   object-fit: cover;
   overflow: hidden;
   filter: saturate(0);
@@ -440,14 +446,22 @@ footer {
     max-height: 120px;
   }
 
+  .email {
+    font-size: 0.85rem;
+  }
+
   section {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
+  
+  .display-info-text > h2 {
+    font-size: 1.5rem;
+  }
 
-  .inside-display {
-    font-size: 1rem;
+  .join-class-text {
+    font-size: 0.85rem;
   }
 
   #ways-modal {
