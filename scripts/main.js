@@ -69,6 +69,32 @@ WAYS_BUTTON.addEventListener('click', () => {
   WAYS_MODAL.showModal();
 });
 
+const glance = document.querySelector('.glance');
+const glanceWrapper = document.querySelector('.glance-wrapper');
+const openGlance = document.querySelector('.open-glance');
+let glanceClosed = true;
+openGlance.addEventListener('click', function() {
+  if (glanceClosed === true) {
+    openGlance.textContent = "-";
+    glance.style.maxHeight = "2000px";
+    glance.style.scale = "1 1";
+    glanceWrapper.style.visibility = 'visible';
+    glanceClosed = false;
+  } else if (glanceClosed === false) {
+    openGlance.textContent = "+";
+    glance.style.maxHeight = "0px";
+    glance.style.scale = "1 0";
+    glanceWrapper.style.visibility = 'hidden';
+    glanceClosed = true;
+  }
+})
+
+if (window.innerWidth > 912) {
+    glance.style.maxHeight = "2000px";
+    glance.style.scale = "1 1";
+    glanceWrapper.style.visibility = 'visible';
+}
+
 let currentYear = new Date().getFullYear();
 let credit = document.getElementById('bottom-credit');
 credit.innerHTML = "Copyright &copy; " + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br> Website design by <a href='http://ryancornett.com' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";

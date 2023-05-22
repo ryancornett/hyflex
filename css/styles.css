@@ -296,6 +296,57 @@ article {
   flex: 1 1 30%;
 }
 
+/* ---------------AT A GLANCE----------------- */
+
+.open-glance {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+  cursor: pointer;
+  user-select: none;
+  color: var(--blue-primary);
+}
+
+.glance {
+  width: 85vw;
+  padding: 2rem 0;
+  margin: 0 auto -2rem auto;
+  max-height: 0px;
+  scale: 1 0;
+  transform-origin: top;
+  transition: all 250ms ease-in-out;
+}
+
+.glance-wrapper {
+  visibility: hidden;
+  transition: all 400ms ease-in-out;
+}
+
+.glance-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.day > h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.day > .slot:last-of-type {
+  margin-bottom: 1.95rem;
+}
+
+.glance-time {
+  font-weight: bold;
+}
+
+.glance-title {
+  margin-bottom: 0.75rem;
+  text-align: right;
+}
+
 /* ---------- ABOUT OUR PROGRAMS ---------- */
 
 #about > h2 {
@@ -475,6 +526,66 @@ footer {
 
   .hyflex-info + .hyflex-info {
     margin-left: 8em;
+  }
+
+  .glance {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    background-image: -moz-linear-gradient(var(--blue-primary), var(--kyae-dark));
+    background-image: -webkit-linear-gradient(var(--blue-primary), var(--kyae-dark));
+    background-image: linear-gradient(var(--blue-primary), var(--kyae-dark));
+    padding: 2%;
+    color: white;
+    border: solid 3px var(--gray-secondary);
+    box-shadow: 0 0 10px var(--blue-primary);
+    margin: 0 auto 0 auto;
+    max-height: unset;
+    scale: unset;
+  }
+  
+  .glance-wrapper {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+  }
+  
+  .glance-header {
+    font-size: 3rem;
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  .day > h3 {
+    font-size: 1.5rem;
+  }
+  
+  .day > .slot:last-of-type {
+    margin-bottom: 1.95rem;
+  }
+
+  .monday, .tuesday {
+    width: 20%;
+  }
+
+  .wednesday, .thursday {
+    width: 30%;
+  }
+
+  .flex-slot {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .glance-title {
+    text-align: unset;
+  }
+
+  .day + .day {
+    margin-left: 1.75rem;
+  }
+
+  .open-glance {
+    display: none;
   }
 
   .contact-form {
