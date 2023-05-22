@@ -25,15 +25,13 @@ const JONES_PHONICS = new Course("Phonics Fundamentals", "Thursday", "1:00-2:30"
 
 let englishCourses = [CORNETT_GRAMMAR, JONES_PHONICS]
 
-const GAINES_TEST_TAKING = new Course("Test-Taking Strategies", "Monday", "6:00-7:30", "https://docs.google.com/document/d/1J5qYvq_pgTa2vjvzQ-BEH6NmGWeS_QYW", "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09", "Learning to navigate the GED study platform, including ready tests and GED final tests is an adventure of good study habits, and dedication to the process. You will become familiar with the types of questions asked in the four categories: Social Studies, Science, Math, and Reading and Language Arts. By learning the ins and outs of the educational process, you will be best prepared to experience the testing process.", "img/robertg.jpg", "Robert Gaines", "robert@laureladulted.org", "(606) 878-9134");
-
 const MARTIN_LAB = new Course("Facilitated Lab", "Tuesday", "10:00-12:00", "https://drive.google.com/file/d/1snMiuVuAVjIbC3TIE_bYlpJbifsSvSpG", "https://us02web.zoom.us/j/82946614012?pwd=OWxVOFRXR2ZaZVRhRTFlT2pJSkVjZz09", "Tutoring in all four subject areas (language arts, math, science, social studies), catering to what skills you need to build and improve to pass the GED.", "img/dellam.jpg", "Della Martin", "della.martin@knox.kyschools.us", "(606) 545-6032");
 
 const PETERS_SOCIAL_STUDIES = new Course("Social Studies", "Wednesday & Thursday", "10:30-12:00", "https://docs.google.com/document/d/1Ex8_nomM_ex3dmGJarMkSPK9HuBPKCXr", "https://us02web.zoom.us/j/89829217809?pwd=T1VSQ1A3S2wyTnRKZ1BHQUVDd0RRUT09", "Students will exit this course with necessary skills for passing the GED Social Studies Test. Topics include civics and government, United States history, economics, world geography, and social studies practices.", "img/austinp.jpg", "Austin Peters", "austin.peters@knox.kyschools.us", "(606) 545-6032");
 
 const GIBBINS_LAB = new Course("Open Lab", "Thursday", "2:00-4:00", "https://docs.google.com/document/d/10uEX9Xf5Q0MitRv7AOZkg2TrJXN-YPirOFLV5Y4nOFo", "https://us06web.zoom.us/j/83660895039?pwd=NCtBUWNBUTJlazBUeHN0OW9jT2RBUT09", "Do you have a math skill you want extra practice with? Is there a science idea you want to explore? Want a refresher on a social studies concept? Maybe even a quick boot camp with reading and writing strategies? Any topic, any subject, your choice. Just let your instructor know what you need when you join.", "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", "(606) 549-1989");
 
-let otherCourses = [GAINES_TEST_TAKING, MARTIN_LAB, PETERS_SOCIAL_STUDIES, GIBBINS_LAB]
+let otherCourses = [MARTIN_LAB, PETERS_SOCIAL_STUDIES, GIBBINS_LAB]
 
 function generateSubjectDiv(subject, container, parent) {
 parent.innerHTML = "";
@@ -92,3 +90,5 @@ for (let i = 0; i < subject.length; i++) {
   }};
 
 export { mathCourses, englishCourses, otherCourses, generateSubjectDiv };
+
+// const GAINES_TEST_TAKING = new Course("Test-Taking Strategies", "Monday", "6:00-7:30", "https://docs.google.com/document/d/1J5qYvq_pgTa2vjvzQ-BEH6NmGWeS_QYW", "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09", "Learning to navigate the GED study platform, including ready tests and GED final tests is an adventure of good study habits, and dedication to the process. You will become familiar with the types of questions asked in the four categories: Social Studies, Science, Math, and Reading and Language Arts. By learning the ins and outs of the educational process, you will be best prepared to experience the testing process.", "img/robertg.jpg", "Robert Gaines", "robert@laureladulted.org", "(606) 878-9134");
