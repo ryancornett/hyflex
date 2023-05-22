@@ -298,11 +298,23 @@ article {
 
 /* ---------------AT A GLANCE----------------- */
 
+.glance-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.notes {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
 .open-glance {
   text-align: center;
   font-size: 4rem;
-  margin-top: -1rem;
-  margin-bottom: -2rem;
+  margin-top: -2.5rem;
+  margin-bottom: -3rem;
   cursor: pointer;
   user-select: none;
   color: var(--blue-primary);
@@ -311,7 +323,7 @@ article {
 .glance {
   width: 85vw;
   padding: 2rem 0;
-  margin: 0 auto -2rem auto;
+  margin: 0 auto -4rem auto;
   max-height: 0px;
   scale: 1 0;
   transform-origin: top;
@@ -321,12 +333,6 @@ article {
 .glance-wrapper {
   visibility: hidden;
   transition: all 400ms ease-in-out;
-}
-
-.glance-header {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
 }
 
 .day > h3 {
@@ -350,6 +356,7 @@ article {
 /* ---------- ABOUT OUR PROGRAMS ---------- */
 
 #about > h2 {
+  margin-top: -1rem;
   text-align: center;
   font-size: 3em;
 }
@@ -539,7 +546,7 @@ footer {
     color: white;
     border: solid 3px var(--gray-secondary);
     box-shadow: 0 0 10px var(--blue-primary);
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     max-height: unset;
     scale: unset;
   }
@@ -552,7 +559,12 @@ footer {
   
   .glance-header {
     font-size: 3rem;
-    margin: 3rem 0 1.5rem 0;
+    margin: 3rem 0 0 0;
+  }
+
+  .notes {
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
   }
 
   .day > h3 {
@@ -630,7 +642,11 @@ footer {
     align-items: center;
     padding: 0.5rem;
     text-transform: uppercase;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 400ms;
+  }
+
+  .to-top:hover {
+    background-color: #000;
   }
   
   .to-top > a {  
