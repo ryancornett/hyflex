@@ -21,7 +21,7 @@ h1, h2, .btn, .modal-close {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h3, h4, li, p, .contact-form {
+h3, h4, li, p, span, .contact-form {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -181,6 +181,7 @@ dialog::backdrop {
 .description {
   max-width: 65ch;
   margin-left: 10%;
+  font-size: 0.85rem;
 }
 
 .profile {
