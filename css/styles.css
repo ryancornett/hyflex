@@ -277,6 +277,21 @@ article {
     margin: 2.5em auto;
 }
 
+.is-in-viewport {
+  height: 1px;
+  width: 100%;
+}
+
+.slide-up-once {
+  /* opacity: 0; */
+  transform: translateY(50px);
+  transition: all 0.75s ease-in-out;
+}
+.slide-up-once.show {
+  /* opacity: 1; */
+  transform: translateY(0px);
+}
+
 /* ------------ WHAT HYFLEX IS ------------ */
 
 #hyflex-anchor {
@@ -458,12 +473,13 @@ footer {
   }
 
   .bg {
-    background-image: url("/img/student-desk.webp");
+    background-image: url("/img/student-desk-7-2023.webp");
     min-height: 55vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(1);
   }
 
   .modal-announce {
