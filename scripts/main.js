@@ -95,6 +95,31 @@ if (window.innerWidth > 912) {
     glanceWrapper.style.visibility = 'visible';
 }
 
+let options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+let floatUp = function(entries, observer) {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) {
+          if(!entry.target.classList.contains('float-up')) {
+              entry.target.classList.add('float-up');            
+          }
+          observer.unobserve(entry.target);
+      }
+  });
+};
+
+let observer = new IntersectionObserver(floatUp, options);
+
+let targets = document.querySelectorAll('.observable');
+targets.forEach(target => {
+observer.observe(target);
+});
+
+
 let currentYear = new Date().getFullYear();
 let credit = document.getElementById('bottom-credit');
 credit.innerHTML = "Copyright &copy; " + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br><br>Laurel County Literacy Council, Inc. is committed to the full implementation of the Americans with Disabilities Act (ADA).<br>It is the policy of LCLC to maximize the full inclusion and integration of people with disabilities in all aspects of employment and all programs, services and activities.<br><br>Website design by <a href='http://ryancornett.com' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";

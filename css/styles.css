@@ -461,7 +461,10 @@ footer {
   display: none;
 }
 
-
+.observable {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 
 
@@ -484,6 +487,17 @@ footer {
 
   .modal-announce {
     font-size: 3.5em;
+    animation: 2s 1 pulse;
+  }
+
+  @keyframes pulse {
+    75% {
+      box-shadow: 0 0 50px rgb(247, 255, 10);
+    }
+
+    100% {
+      box-shadow: 0 3px 5px black;
+    }
   }
 
   .btn {
@@ -675,5 +689,17 @@ footer {
   .visible {
     opacity: 80%;
     transition: all ease-in-out 500ms;
+  }
+
+  .observable {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 650ms ease-in-out 150ms;
+  }
+  
+  .float-up {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 650ms ease-in-out 150ms;
   }
 }
