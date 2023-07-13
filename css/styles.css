@@ -92,20 +92,24 @@ dialog::backdrop {
 /* ------------------MODAL SECTION------------------- */
 
 .modal-announce {
+  border-radius: 3%;
+  width: 100%;
+  background-color: var(--kyae-dark);
+  box-shadow: 0 3px 5px black;
+}
+
+.modal-announce > h2 {
   text-transform: uppercase;
   text-align: center;
   margin: 0.5em auto;
   font-size: 1.5em;
-  border-radius: 3%;
-  width: 100%;
-  background-color: var(--kyae-dark);
   color: white;
-  box-shadow: 0 3px 5px black;
 }
 
 .interior {
   display: flex;
   justify-content: center;
+  opacity: 0;
 }
   
 .btn {
@@ -485,18 +489,29 @@ footer {
     filter: grayscale(1);
   }
 
-  .modal-announce {
+  .interior {
+    animation: appear 750ms ease 750ms 1 forwards;
+  }
+
+  @keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .modal-announce > h2 {
     font-size: 3.5em;
-    animation: 2s 1 pulse;
+    animation: 3s 1 pulse;
   }
 
   @keyframes pulse {
-    75% {
-      box-shadow: 0 0 50px rgb(247, 255, 10);
+    
+    40% {
+      text-shadow: 0 0 40px rgb(247, 255, 10);
     }
 
     100% {
-      box-shadow: 0 3px 5px black;
+      text-shadow: none;
     }
   }
 
