@@ -109,7 +109,6 @@ dialog::backdrop {
 .interior {
   display: flex;
   justify-content: center;
-  opacity: 0;
 }
   
 .btn {
@@ -489,7 +488,7 @@ footer {
     filter: grayscale(1);
   }
 
-  .interior {
+  /* .interior {
     animation: appear 750ms ease 750ms 1 forwards;
   }
 
@@ -497,7 +496,7 @@ footer {
     100% {
       opacity: 1;
     }
-  }
+  } */
 
   .modal-announce > h2 {
     font-size: 3.5em;
