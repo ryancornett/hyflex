@@ -479,10 +479,10 @@ footer {
   }
 
   .bg {
-    background-image: url("/img/student-desk-7-2023.webp");
+    background-image: url("/img/student_table_desk.webp");
     min-height: 55vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(1);
