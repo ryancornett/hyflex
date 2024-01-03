@@ -479,13 +479,13 @@ footer {
   }
 
   .bg {
-    background-image: url("/img/live-oak-desk.webp");
+    background-image: url("/img/oak_desk_at_home.webp");
     min-height: 55vh;
     background-attachment: fixed;
-    background-position:bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(1);
+    background-size:cover;
+    filter: grayscale(0.85);
   }
 
   /* .interior {

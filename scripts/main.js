@@ -13,6 +13,22 @@ function displayTopButton() {
 
 document.addEventListener('scroll', displayTopButton);
 
+let currentYear = new Date().getFullYear();
+let month = new Date().getMonth();
+let season = "";
+if (month <= 2) {
+  season = "Winter";
+} else if (month >= 3 && month <= 4) {
+  season = "Spring";
+} else if (month >= 5 && month <= 7) {
+  season = "Summer";
+} else {
+  season = "Fall";
+}
+
+let findAClass = document.getElementById('find-a-class')
+findAClass.textContent = `Find a ${season} ${currentYear} class`;
+
 let mathContainer = document.querySelector('.math-container');
 let rlaContainer = document.querySelector('.rla-container');
 let otherContainer = document.querySelector('.other-container');
@@ -120,6 +136,6 @@ observer.observe(target);
 });
 
 
-let currentYear = new Date().getFullYear();
+
 let credit = document.getElementById('bottom-credit');
-credit.innerHTML = "Copyright &copy; " + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br><br>Laurel County Literacy Council, Inc. is committed to the full implementation of the Americans with Disabilities Act (ADA).<br>It is the policy of LCLC to maximize the full inclusion and integration of people with disabilities in all aspects of employment and all programs, services and activities.<br><br>Website design by <a href='https://linktr.ee/ryancornett' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";
+credit.innerHTML = "Copyright &copy; 2022-" + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br><br>Laurel County Literacy Council, Inc. is committed to the full implementation of the Americans with Disabilities Act (ADA).<br>It is the policy of LCLC to maximize the full inclusion and integration of people with disabilities in all aspects of employment and all programs, services and activities.<br><br>Website by <a href='https://linktr.ee/ryancornett' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";
