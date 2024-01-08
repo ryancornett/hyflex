@@ -488,16 +488,6 @@ footer {
     filter: grayscale(0.85);
   }
 
-  /* .interior {
-    animation: appear 750ms ease 750ms 1 forwards;
-  }
-
-  @keyframes appear {
-    100% {
-      opacity: 1;
-    }
-  } */
-
   .modal-announce > h2 {
     font-size: 3.5em;
     animation: 3s 1 pulse;
