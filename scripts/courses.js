@@ -15,7 +15,7 @@ const LEDFORD_MATH_FOUNDATIONS = new Course("Math Foundations", "Wednesday", "1:
 
 const CHESTNUT_GEOMETRY = new Course("Geometry", "Thursday", "1:30-3:00", "https://docs.google.com/document/d/1EEQ88RKRlLGmUWX7I-w4Wm7YQC5TJVCAS_ECEC-n9Zc", "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09", `In this class, you'll work on area, perimeter, surface area, and volume formulas. Plus, you'll look at data analysis concepts like mean, median, mode, range, and probability.`, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", "(606) 878-9134");
 
-const MOSES_ALGEBRA = new Course("Algebra", "Thursday", "10:30-12:00", "https://docs.google.com/document/d/1kK8JKq7Ft_w_3siKnofJWA5meHYpC4wXnrUoTvJ2AFI", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.${NOTE_START}No class 3/14${NOTE_END}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379");
+const MOSES_ALGEBRA = new Course("Algebra", "Thursday", "10:30-12:00", "https://docs.google.com/document/d/1kK8JKq7Ft_w_3siKnofJWA5meHYpC4wXnrUoTvJ2AFI", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379");
 
 let mathCourses = [SIZEMORE_NUMBER_SENSE, LIPPS_ALGEBRA, LEDFORD_MATH_FOUNDATIONS, MOSES_ALGEBRA, CHESTNUT_GEOMETRY];
 
