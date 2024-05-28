@@ -21,7 +21,7 @@ let mathCourses = [SIZEMORE_NUMBER_SENSE, LIPPS_ALGEBRA, LEDFORD_MATH_FOUNDATION
 
 const CORNETT_GRAMMAR = new Course("Grammar & Writing", "Tuesday", "10:30-12:00", "https://docs.google.com/document/d/1cFHIMcdR3V1Nz8zG_VCGzIbAWj6NQDhp", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll learn how to write essays and the science of how Standard American English works. Better command of the language means better command of your audience.`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230");
 
-const JONES_PHONICS = new Course("Phonics Fundamentals", "Thursday", "1:00-2:30", "https://drive.google.com/file/d/1ynjejcMlSgcoryKYJt0Dsrb7hsFIuKiq", "https://us06web.zoom.us/j/89007426822", `This course will introduce learners to the concepts and skills necessary to learn/improve reading skills. The course is taught using lesson plans based on the College and Career Readiness Standards.${NOTE_START}No class 5/16${NOTE_END}`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", "(606) 549-1989");
+const JONES_PHONICS = new Course("Phonics Fundamentals", "Thursday", "1:00-2:30", "https://drive.google.com/file/d/1ynjejcMlSgcoryKYJt0Dsrb7hsFIuKiq", "https://us06web.zoom.us/j/89007426822", `This course will introduce learners to the concepts and skills necessary to learn/improve reading skills. The course is taught using lesson plans based on the College and Career Readiness Standards.`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", "(606) 549-1989");
 
 let englishCourses = [CORNETT_GRAMMAR, JONES_PHONICS]
 
