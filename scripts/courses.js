@@ -33,10 +33,10 @@ let otherCourses = [PETERS_SOCIAL_STUDIES, GIBBINS_LAB]
 
 function generateSubjectDiv(subject, container, parent) {
 parent.innerHTML = "";
-const announcement = document.createElement('h4');
-announcement.classList.add('announcement');
-announcement.textContent = "No classes 6/24 - 7/7";
-parent.appendChild(announcement);
+// const announcement = document.createElement('h4');
+// announcement.classList.add('announcement');
+// announcement.textContent = "No classes 6/24 - 7/7";
+// parent.appendChild(announcement);
 for (let i = 0; i < subject.length; i++) {
     let courseName = document.createElement("h3");
     courseName.setAttribute("class", "course-name");
