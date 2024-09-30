@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Language Arts Essay Practice</title>
+        <meta name="description" content="Language Arts Essay Practice">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/essay.css">
+    <body>
+        <div class="timer-wrapper">
+            <p>Reasoning through Language Arts - Candidate Name</p>
+            <div class="time">
+                <div class="clock-icon"><img src="/img/icon-clock.png" alt="Clock icon" class="icon white-icon" /></div>
+                <div id="timer"></div>
+            </div>
+        </div>
+        <div class="flag-wrapper"><img src="/img/icon-flag.png" alt="Flag icon" class="icon white-icon" />Flag for Review</div>
+            <div class="container">
+            <div class="info-wrapper">
+                <div class="tabs">
+                    <span class="info-btn active" id="instructions">Instructions</span>
+                    <span class="info-btn" id="article-one">Article One</span>
+                    <span class="info-btn" id="article-two">Article Two</span>
+                </div>
+                <div class="article">
+
+                </div>
+            </div>
+            <div class="essay-wrapper">
+            <div class="edit-buttons">
+                <div class="edit-btn" id="cut"><img src="/img/icon-cut.png" class="icon" id="icon-cut" alt="Cut icon" />Cut</div>
+                <div class="edit-btn" id="copy"><img src="/img/icon-copy.png" class="icon" alt="Copy icon" />Copy</div>
+                <div class="edit-btn" id="paste"><img src="/img/icon-paste.png" class="icon" alt="Paste icon" />Paste</div>
+                <div class="edit-btn" id="undo"><img src="/img/icon-undo.png" class="icon" alt="Undo icon" />Undo</div>
+                <div class="edit-btn" id="redo"><img src="/img/icon-redo.png" class="icon" alt="Redo icon" />Redo</div>
+            </div>
+
+            
+                <fieldset>
+                <textarea spellcheck="false" name="essay" id="essay" cols="30" rows="10"></textarea>
+                </fieldset>
+                </div>
+            </div>
+
+            <dialog id="modal">
+                <h4 id="alert-text">_</h4>
+                <button class="edit-btn" id="okay">OKAY</button>
+            </dialog>
+
+        <footer>
+            <div class="nav-wrapper">
+                <div class="nav-btn"><img src="/img/icon-previous.png" class="icon white-icon" alt="Previous icon" />Previous</div>
+                <div class="nav-btn"><img src="/img/icon-nav.png" class="icon white-icon" alt="Navigator icon" />Navigator</div>
+                <div class="nav-btn"><img src="/img/icon-next.png" class="icon white-icon" alt="Next icon" />Next</div>
+            </div>
+            <div id="essay-id" class="banning-plastics"></div>
+        </footer>
+        
+        <script src="../scripts/essay.js" type="module" async defer></script>
+    </body>
+</html>

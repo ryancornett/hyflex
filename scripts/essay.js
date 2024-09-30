@@ -228,9 +228,11 @@ let essayId = document.querySelector('#essay-id');
 var i = 0;
 if (essayId.classList.contains('mobile-devices')) {
   i = 1; }
-  else if (essayId.classList.contains('ai-tools')) {
-    i = 2;}
-  else {};
+else if (essayId.classList.contains('ai-tools')) {
+  i = 2;}
+else if (essayId.classList.contains('banning-plastics')) {
+  i = 3;}
+else {};
 itemHolder.innerHTML = `${INSTRUCTIONS} <br> ${ITEMS[i].prompt}`;
 
 instructionsTab.addEventListener('click', function() {
