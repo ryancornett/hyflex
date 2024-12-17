@@ -9,7 +9,7 @@ const NOTE_END = "</b></p>"
 
 const SIZEMORE_NUMBER_SENSE = new Course("Number Sense", "Monday", "10:30-12:00", "https://docs.google.com/document/d/1lBnj1anz5cOa1L5bbV-CUbs2pysiH7Ys/edit#heading=h.gjdgxs", "https://us04web.zoom.us/j/6208740686?pwd=QjRmSk9yNG80SzVIekFMUGNDd0lFdz09", `In this class, you'll sharpen your skills with operations, fractions, decimals, percents, and word problems. You'll also work with reading bar graphs, circle graphs, line plots, tables, and other ways of representing data.`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", "(606) 878-9134");
 
-const LIPPS_ALGEBRA = new Course("Algebra", "Tuesday", "5:00-6:30", "https://docs.google.com/document/d/1WYkF4sSxJ9EgesBxfhVLGHaJ3iD9ZdIB/edit?usp=share_link&ouid=104017723111487459394&rtpof=true&sd=true", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", "(606) 599-1230");
+const LIPPS_ALGEBRA = new Course("Algebra", "Tuesday", "5:00-6:30", "https://docs.google.com/document/d/1WYkF4sSxJ9EgesBxfhVLGHaJ3iD9ZdIB/edit?usp=share_link&ouid=104017723111487459394&rtpof=true&sd=true", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.${NOTE_START}No class 12/17${NOTE_END}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", "(606) 599-1230");
 
 const LEDFORD_MATH_FOUNDATIONS = new Course("Math Foundations", "Wednesday", "1:00-2:00", "https://docs.google.com/document/d/12AWYyoIoSb8FPdp5ccw2wBdIlJfXGUzW", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `This course will introduce learners to the concepts and skills necessary to progress to the GED mathematics exam or improve applied mathematics skills for the workforce or post-secondary education.`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379");
 
@@ -17,7 +17,7 @@ const CHESTNUT_GEOMETRY = new Course("Geometry", "Wednesday", "1:30-3:00", "http
 
 const MOSES_ALGEBRA = new Course("Algebra", "Thursday", "10:30-12:00", "https://docs.google.com/document/d/1kK8JKq7Ft_w_3siKnofJWA5meHYpC4wXnrUoTvJ2AFI", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379");
 
-let mathCourses = [SIZEMORE_NUMBER_SENSE, LIPPS_ALGEBRA, LEDFORD_MATH_FOUNDATIONS, MOSES_ALGEBRA, CHESTNUT_GEOMETRY];
+let mathCourses = [SIZEMORE_NUMBER_SENSE, LIPPS_ALGEBRA, LEDFORD_MATH_FOUNDATIONS, CHESTNUT_GEOMETRY, MOSES_ALGEBRA];
 
 const CORNETT_GRAMMAR = new Course("Grammar & Writing", "Tuesday", "10:30-12:00", "https://docs.google.com/document/d/1cFHIMcdR3V1Nz8zG_VCGzIbAWj6NQDhp", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll learn how to write essays and the science of how Standard American English works. Better command of the language means better command of your audience.`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230");
 
