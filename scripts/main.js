@@ -15,10 +15,11 @@ document.addEventListener('scroll', displayTopButton);
 
 let currentYear = new Date().getFullYear();
 let month = new Date().getMonth();
+console.log(month);
 let season = "";
-if (month <= 2) {
+if (month <= 1 || month == 11) {
   season = "Winter";
-} else if (month >= 3 && month <= 4) {
+} else if (month >= 2 && month <= 4) {
   season = "Spring";
 } else if (month >= 5 && month <= 7) {
   season = "Summer";
