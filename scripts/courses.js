@@ -33,7 +33,7 @@ function generateSubjectDiv(subject, container, parent) {
 parent.innerHTML = "";
 const announcement = document.createElement('h4');
 announcement.classList.add('announcement');
-announcement.textContent = "No classes 6/26/2025 - 8/4/2025";
+announcement.textContent = "No classes 6/26/2025 - 9/1/2025";
 parent.appendChild(announcement);
 for (let i = 0; i < subject.length; i++) {
     let courseName = document.createElement("h3");
