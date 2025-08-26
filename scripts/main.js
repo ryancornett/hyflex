@@ -15,7 +15,6 @@ document.addEventListener('scroll', displayTopButton);
 
 let currentYear = new Date().getFullYear();
 let month = new Date().getMonth();
-console.log(month);
 let season = "";
 if (month <= 1 || month == 11) {
   season = "Winter";
@@ -90,7 +89,8 @@ const glance = document.querySelector('.glance');
 const glanceWrapper = document.querySelector('.glance-wrapper');
 const openGlance = document.querySelector('.open-glance');
 let glanceClosed = true;
-openGlance.addEventListener('click', function() {
+if (openGlance) {
+  openGlance.addEventListener('click', function() {
   if (glanceClosed === true) {
     openGlance.textContent = "-";
     glance.style.maxHeight = "2000px";
@@ -105,8 +105,9 @@ openGlance.addEventListener('click', function() {
     glanceClosed = true;
   }
 })
+}
 
-if (window.innerWidth > 912) {
+if (window.innerWidth > 912 && glance) {
     glance.style.maxHeight = "2000px";
     glance.style.scale = "1 1";
     glanceWrapper.style.visibility = 'visible';
@@ -139,4 +140,51 @@ observer.observe(target);
 
 
 let credit = document.getElementById('bottom-credit');
-credit.innerHTML = "Copyright &copy; 2022-" + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br><br>Laurel County Literacy Council, Inc. is committed to the full implementation of the Americans with Disabilities Act (ADA).<br>It is the policy of LCLC to maximize the full inclusion and integration of people with disabilities in all aspects of employment and all programs, services and activities.<br><br>Website by <a href='https://linktr.ee/ryancornett' style='color:white; font-weight: bold;'>Ryan Cornett</a>.";
+credit.innerHTML = "Copyright &copy; 2022-" + currentYear + " Laurel County Adult Education & Literacy Council. All rights reserved.<br><br>Laurel County Literacy Council, Inc. is committed to the full implementation of the Americans with Disabilities Act (ADA).<br>It is the policy of LCLC to maximize the full inclusion and integration of people with disabilities in all aspects of employment and all programs, services and activities.";
+
+(function () {
+  const ETHICS_KEY = 'ethics_expectations_agreed';
+  const NINETY_DAYS_MS = 90 * 24 * 60 * 60 * 1000;
+
+  function setWithExpiry(key, value, ttlMs) {
+    const record = { value, expiresAt: Date.now() + ttlMs };
+    localStorage.setItem(key, JSON.stringify(record));
+  }
+
+  function getWithExpiry(key) {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+    try {
+      const record = JSON.parse(raw);
+      if (!record || typeof record.expiresAt !== 'number') return null;
+      if (Date.now() > record.expiresAt) {
+        localStorage.removeItem(key);
+        return null;
+      }
+      return record.value; // true when set
+    } catch {
+      localStorage.removeItem(key);
+      return null;
+    }
+  }
+
+  function skipEthicsStep() {
+    const el = document.getElementById('ethics-step');
+    if (el) el.style.display = 'none';
+  }
+
+  // --- main ---
+  const alreadyAgreed = getWithExpiry(ETHICS_KEY) === true;
+  if (alreadyAgreed) {
+    skipEthicsStep();
+    return;
+  }
+
+  const agreed = window.confirm(
+    'You must read our Ethics and Expectations document before joining a class.'
+  );
+  if (agreed) {
+    setWithExpiry(ETHICS_KEY, true, NINETY_DAYS_MS);
+    skipEthicsStep();
+  }
+})();

@@ -4,40 +4,129 @@ class Course {
     }
 }
 
-const NOTE_START = "<p style='color:red; font-weight:200; font-size: 0.8rem'><b>";
+function getFoundationalSubject(s) {
+    if (s.includes("Soc/Sci")) {
+        return "fs-color";
+    } else if (s.includes("Math")) {
+        return "fm-color";
+    } else { return "fr-color"; }
+}
+function getIntermediateSubject(s) {
+    if (s.includes("Soc/Sci")) {
+        return "is-color";
+    } else if (s.includes("Math")) {
+        return "im-color";
+    } else { return "ir-color"; }
+}
+
+function getTierSubjectClass(name) {
+    let n = name.split(" ");
+    switch (n[0]) {
+        case "Foundational":
+            return getFoundationalSubject(n[1]);
+        
+        case "Intermediate":
+            return getIntermediateSubject(n[1]);
+    }
+}
+const CLAY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
+const KNOX_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
+const LONDON_ZOOM = `https://us04web.zoom.us/j/6208740686?pwd=QjRmSk9yNG80SzVIekFMUGNDd0lFdz09`;
+const CORBIN_ZOOM = `https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09`;
+const WHITLEY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
+
+const FM_Overview = "This course helps build math confidence by practicing real-life skills like reading graphs, measuring, and working with money, shapes, place value, word problems, geometry, and percentages."
+const FM_Folder = "https://drive.google.com/drive/folders/1E4Rg4IjURtwLSb-KLQvI7WYHOm3z0-QH"
+const FR_Overview = "This course helps you become a better reader and writer by learning how to find the main idea, understand new words, and fix grammar mistakes."
+const FR_Folder = "https://drive.google.com/drive/folders/1xTsSDCC4GbA83QAQbeO4xmIA4tQaqNCs"
+const FS_Overview = "This course helps you understand history and science by learning how to read for information, use visuals like graphs and maps, and make sense of cause-and-effect."
+const FS_Folder = "https://drive.google.com/drive/folders/1gzPXV-Nko_ylv7SRx2YcDz1Kof1nFkiq"
+const IM_Overview = "This course helps you build confidence in algebra, geometry, and problem solving for real-life situations. Week by week, you'll learn to use formulas, read graphs, and break down word problems."
+const IM_Folder = "https://drive.google.com/drive/folders/1EuVX5UzXqOFWOyuWrlaGJN0z7UsppXH1"
+const IR_Overview = "This course strengthens reading and writing skills for the GED by helping you analyze texts, form arguments, and improve your grammar. You'll learn how to make inferences, spot tone, write organized paragraphs, and edit for clarity."
+const IR_Folder = "https://drive.google.com/drive/folders/12Mbu_OEbHHqJpKtGm_jDhApPWPyorw_3"
+const IS_Overview = "This course builds skills in reading, analyzing, and interpreting social studies and science information. You'll learn to examine sources, evaluate data, identify cause and effect, and support conclusions using evidence."
+const IS_Folder = "https://drive.google.com/drive/folders/1yg6CiJh6J3HHAJ0dciyBS21t9JqfLhTH"
+
+const NOTE_START = "<p class='course-note'><b>";
 const NOTE_END = "</b></p>"
 
-const SIZEMORE_NUMBER_SENSE = new Course("Number Sense", "Monday", "10:30-12:00", "https://docs.google.com/document/d/1lBnj1anz5cOa1L5bbV-CUbs2pysiH7Ys/edit#heading=h.gjdgxs", "https://us04web.zoom.us/j/6208740686?pwd=QjRmSk9yNG80SzVIekFMUGNDd0lFdz09", `In this class, you'll sharpen your skills with operations, fractions, decimals, percents, and word problems. You'll also work with reading bar graphs, circle graphs, line plots, tables, and other ways of representing data.`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", "(606) 878-9134");
+const mathCourses = [
+    new Course("Foundational Math #1", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
-const LIPPS_ALGEBRA = new Course("Algebra", "Tuesday", "5:00-6:30", "https://docs.google.com/document/d/1WYkF4sSxJ9EgesBxfhVLGHaJ3iD9ZdIB/edit?usp=share_link&ouid=104017723111487459394&rtpof=true&sd=true", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", "(606) 599-1230");
+    new Course("Intermediate Math #1", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, IM_Overview, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379"),
 
-const LEDFORD_MATH_FOUNDATIONS = new Course("Math Foundations", "Wednesday", "1:00-2:00", "https://docs.google.com/document/d/12AWYyoIoSb8FPdp5ccw2wBdIlJfXGUzW", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `This course will introduce learners to the concepts and skills necessary to progress to the GED mathematics exam or improve applied mathematics skills for the workforce or post-secondary education.`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379");
+    new Course("Foundational Math #2", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
-const CHESTNUT_GEOMETRY = new Course("Geometry", "Wednesday", "1:30-3:00", "https://docs.google.com/document/d/1EEQ88RKRlLGmUWX7I-w4Wm7YQC5TJVCAS_ECEC-n9Zc", "https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09", `In this class, you'll work on area, perimeter, surface area, and volume formulas. Plus, you'll look at data analysis concepts like mean, median, mode, range, and probability.`, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", "(606) 878-9134");
+    new Course("Intermediate Math #2", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, IM_Overview, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379"),
 
-const MOSES_ALGEBRA = new Course("Algebra", "Thursday", "12:00-1:30", "https://docs.google.com/document/d/1kK8JKq7Ft_w_3siKnofJWA5meHYpC4wXnrUoTvJ2AFI", "https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09", `In this class, you'll work on expressions, equations, inequalities, functions, and graphs.`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379");
+    new Course("Intermediate Math #3", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, IM_Overview, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", "(606) 599-1230"),
 
-let mathCourses = [SIZEMORE_NUMBER_SENSE, LIPPS_ALGEBRA, LEDFORD_MATH_FOUNDATIONS, CHESTNUT_GEOMETRY, MOSES_ALGEBRA];
+    new Course("Foundational Math #3", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, FM_Overview, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379"),
 
-const CORNETT_GRAMMAR = new Course("Grammar & Writing", "Tuesday", "10:30-12:00", "https://docs.google.com/document/d/1cFHIMcdR3V1Nz8zG_VCGzIbAWj6NQDhp", "https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09", `In this class, you'll learn how to write essays and the science of how Standard American English works. Better command of the language means better command of your audience.`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230");
+    new Course("Intermediate Math #4", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, IM_Overview, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379"),
 
-const JONES_PHONICS = new Course("Phonics Fundamentals", "Thursday", "1:00-2:30", "https://drive.google.com/file/d/1ynjejcMlSgcoryKYJt0Dsrb7hsFIuKiq", "https://us06web.zoom.us/j/89007426822", `This course will introduce learners to the concepts and skills necessary to learn/improve reading skills. The course is taught using lesson plans based on the College and Career Readiness Standards.`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", "(606) 549-1989");
+    new Course("Foundational Math #4", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, FM_Overview, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", "(606) 878-9134"),
 
-let englishCourses = [CORNETT_GRAMMAR, JONES_PHONICS]
+    new Course("Foundational Math #5", "Wednesday", "1:00-1:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 528-0379"),
 
-const GIBBINS_LAB = new Course("Open Lab", "Thursday", "2:00-4:00", "https://docs.google.com/document/d/10uEX9Xf5Q0MitRv7AOZkg2TrJXN-YPirOFLV5Y4nOFo", "https://us02web.zoom.us/j/86209979595?pwd=zbLnB1OvbUccvP5HeKvgU1YJNfYebj.1", `Do you have a math skill you want extra practice with? Is there a science idea you want to explore? Want a refresher on a social studies concept? Maybe even a quick boot camp with reading and writing strategies? Any topic, any subject, your choice. Just let your instructor know what you need when you join.`, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", "(606) 549-1989");
+    new Course("Intermediate Math #5", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, IM_Overview, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", "(606) 878-9134"),
+];
 
-let otherCourses = [GIBBINS_LAB]
+const rlaCourses = [
+    new Course("Intermediate RLA #1", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, IR_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
+
+    new Course("Foundational RLA #1", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Intermediate RLA #2", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, IR_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
+
+    new Course("Foundational RLA #2", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Intermediate RLA #3", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Intermediate RLA #4", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Foundational RLA #4", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Dema Hacker", "dema@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Foundational RLA #5", "Thursday", "1:45-2:30", FR_Folder, WHITLEY_ZOOM, FR_Overview, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", "(606) 549-1989"),
+
+    new Course("Intermediate RLA #5", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", "(606) 878-9134"),
+];
+
+const soc_SciCourses = [
+    new Course("Foundational Soc/Sci #1", "Monday", "1:45-2:30", FS_Folder, LONDON_ZOOM, FS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Intermediate Soc/Sci #1", "Monday", "3:15-4:00", IS_Folder, WHITLEY_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", "(606) 549-1989"),
+
+    new Course("Foundational Soc/Sci #2", "Tuesday", "1:45-2:30", FS_Folder, LONDON_ZOOM, FS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 878-9134"),
+
+    new Course("Intermediate Soc/Sci #2", "Tuesday", "3:15-4:00", IS_Folder, WHITLEY_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", "(606) 549-1989"),
+
+    new Course("Foundational Soc/Sci #3", "Tuesday", "4:00-4:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+
+    new Course("Intermediate Soc/Sci #3", "Tuesday", "4:45-5:30", IS_Folder, LONDON_ZOOM, IS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 549-1989"),
+
+    new Course("Foundational Soc/Sci #4", "Wednesday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+
+    new Course("Intermediate Soc/Sci #4", "Wednesday", "10:30-11:15", IS_Folder, CLAY_ZOOM, IS_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
+
+    new Course("Foundational Soc/Sci #5", "Thursday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+
+    new Course("Intermediate Soc/Sci #5", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, IS_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
+];
 
 function generateSubjectDiv(subject, container, parent) {
-parent.innerHTML = "";
-const announcement = document.createElement('h4');
-announcement.classList.add('announcement');
-announcement.textContent = "No classes 6/26/2025 - 9/1/2025";
-parent.appendChild(announcement);
-for (let i = 0; i < subject.length; i++) {
+    parent.innerHTML = "";
+    // const announcement = document.createElement('h4');
+    // announcement.classList.add('announcement');
+    // announcement.textContent = "Classes resume 9/2/2025";
+    // parent.appendChild(announcement);
+    for (let i = 0; i < subject.length; i++) {
     let courseName = document.createElement("h3");
     courseName.setAttribute("class", "course-name");
+    courseName.classList.add(getTierSubjectClass(subject[i].name))
     courseName.innerText = subject[i].name;
     parent.appendChild(courseName);
     let infoDiv = document.createElement('div');
@@ -56,7 +145,7 @@ for (let i = 0; i < subject.length; i++) {
     parent.appendChild(linksDiv);
     let syllabusLink = document.createElement('p');
     syllabusLink.setAttribute('class', 'syllabus');
-    syllabusLink.innerHTML = `<a href = "${subject[i].syllabus}">Course Syllabus</a>`;
+    syllabusLink.innerHTML = `<a href = "${subject[i].syllabus}">Learning Targets</a>`;
     linksDiv.appendChild(syllabusLink);
     let zoomLink = document.createElement('p');
     zoomLink.setAttribute('class', 'zoom');
@@ -89,4 +178,4 @@ for (let i = 0; i < subject.length; i++) {
     container.appendChild(parent);
   }};
 
-export { mathCourses, englishCourses, otherCourses, generateSubjectDiv };
+export { mathCourses, rlaCourses as englishCourses, soc_SciCourses as otherCourses, generateSubjectDiv };

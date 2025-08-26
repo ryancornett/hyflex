@@ -7,10 +7,14 @@
         <meta name="description" content="Clay, Knox, Laurel, & Whitley Adult Education HyFlex Course Schedule">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="stylesheet" href="css/carousel.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
     </head>
     <body>
         
@@ -31,9 +35,9 @@
             <div class="modal-container">
                 <div class="interior">
                     <button id="open-math" class="btn">Mathematics</button>
-                    <button id="open-rla" class="btn">Language Arts</button>
-                    <button id="open-other" class="btn">Other Courses</button>
-                    <button id="open-ways" class="btn">Ways to Join In</button>
+                    <button id="open-rla" class="btn">Language Arts (RLA)</button>
+                    <button id="open-other" class="btn">Social Studies/Science</button>
+                    <button id="open-ways" class="btn">How to Join In</button>
                 </div>
             
                 <dialog id='math-modal'>
@@ -79,8 +83,8 @@
                                 
                                 </svg>
                                 <div class="display-info-text">
-                                    <h2>Virtual</h2>
-                                    <p class="join-class-text">Need to join a class at home or elsewhere on your device? Now you can! Our four partner counties have several options.</p>
+                                    <h2>Virtually</h2>
+                                    <p class="join-class-text">Need to join a class from home or elsewhere on your device? Now you can! Our four partner counties have several options.</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +95,7 @@
                                     <circle cx="12" cy="10" r="1" stroke="#223d96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 <div class="display-info-text">
-                                    <h2>Remote</h2>
+                                    <h2>Remotely</h2>
                                     <p class="join-class-text">Want the learning center experience with a class taught in a different county? Come to our classroom and join remotely!</p>
                                 </div>
                             </div>
@@ -107,7 +111,7 @@
                                     </svg>
                                     <div class="display-info-text">
                                         <h2>Recordings</h2>
-                                        <p class="join-class-text">If you miss a class (and we understand that happens occasionally), then you can watch the recording. However, plan to join live as often as possible!</p>
+                                        <p class="join-class-text">If you miss a class (and we understand that happens occasionally), then you can request a recording. However, plan to join live as often as possible!</p>
                                     </div>
                             </div>
                         </div>
@@ -116,89 +120,148 @@
 
             </div>
             
-            <h4 class="announcement observable">Classes will resume 9/1/2025</h4>
+            <h4 class="announcement observable">Classes will resume 9/2/2025</h4>
 
             <div id="hyflex-anchor">
-                <h2 id="hyflex-title" class="observable">What HyFlex Is</h2>
+                <h2 id="hyflex-title" class="observable">What is HyFlex?</h2>
                 <article id="hyflex">
                     <div class="hyflex-info observable">
-                        <h3 class="flexible">Flexible Participation</h3>
-                        <p>Our HyFlex (Hybrid-Flexible) courses provide flexible participation options for modern adult education students with responsibilities that require alternatives to traditional learning schedules.</p>
+                        <h3 class="flexible">The HyFlex Carousel</h3>
+                        <p>Our HyFlex Carousel is a flexible learning program made for adults with busy or changing schedules. You can join or leave the program at any time—there's no set start date. Each class provides short, 45-minute lessons over math, reading, science, and/or social studies. They're taught by experienced teachers in our partner counties of Clay, Knox, Laurel, and Whitley. Lessons are offered in the morning, afternoon, and evening so you can choose which works best for you. Whether you come once a week or every day, we'll help you keep moving forward.</p>
                     </div>
                     <div class="hyflex-info observable">
-                        <h3 class="options">Learning Options</h3>
-                        <p>These classes are provided by experienced instructors across our partner counties (Clay, Knox, Laurel, and Whitley) with 1.5 hour lessons on math, language arts, science, or social studies topics. Times and days are varied to accommodate the maximum number of students.</p>
+                        <h3 class="options">How the Carousel Works</h3>
+                        <p>Our classes run on a 4-week cycle, like a ride that loops around. You can “hop on” at any point and begin learning. Each week covers different skills, but are designed to stand alone; you won't feel behind if you start in the middle. We offer lessons at three levels, or tiers: Foundational (beginner), Intermediate (in the middle), and Advanced (offered on-demand for students close to taking the GED test). You can move up when your instructor thinks you're ready. You'll also learn test-taking strategies, time-management, and how to use tools like graphs, maps, and calculators. Everything is built to help you succeed at your own pace.</p>
                     </div>
                 </article>
             </div>
-           
-            <h2 class="glance-header observable">Schedule At a Glance</h2>
-            <p class="notes observable">See the full catalog above for course notes</p> <p class="open-glance">+</p>
-            <div class="glance observable">
-                <div class="glance-wrapper">
-                    
-                    <div class="day monday">
-                        <h3 id="monday-header">Monday</h3>
-                        <div class="slot">
-                            <p class="glance-time">10:30-12:00 Noon</p>
-                            <p class="glance-title">Number Sense <br>with Mark</p>
-                        </div>
+
+            <div class="carousel-schedule">
+                <section aria-labelledby="sched-title">
+                    <h2 id="sched-title" class="visually-hidden">Weekly Class Schedule</h2>
+
+                    <div style="overflow-x:auto">
+                        <table style="border-collapse:collapse; table-layout:fixed; width:100%; min-width:720px">
+                        <caption>Weekly Class Schedule</caption>
+
+                        <!-- Optional column sizing -->
+                        <colgroup>
+                            <col style="width:14.5%">
+                            <col style="width:10%">
+                            <col style="width:18.875%">
+                            <col style="width:18.875%">
+                            <col style="width:18.875%">
+                            <col style="width:18.875%">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                            <!-- Row 1: columns 1 and 2 merged -->
+                            <th id="h12" colspan="2" scope="colgroup">Weeks 1-4 — lessons cycle every 4 weeks</th>
+                            <th class="ct-day" scope="col">Monday</th>
+                            <th class="ct-day" scope="col">Tuesday</th>
+                            <th class="ct-day" scope="col">Wednesday</th>
+                            <th class="ct-day" scope="col">Thursday</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- Rows 2–5 share the first column cell -->
+                            <tr>
+                            <th class="ct-period" scope="rowgroup" rowspan="4">Morning &nbsp;<sl-icon name="cloud-fog"></sl-icon></th>
+                            <td class="ct-time">9:00-9:45</td>
+                            <td class="ct-fm">Foundational Math &nbsp;<sl-icon name="percent"></sl-icon></td>
+                            <td class="ct-fm">Foundational Math &nbsp;<sl-icon name="percent"></sl-icon></td>
+                            <td class="ct-fs">Foundational Soc/Sci &nbsp;<sl-icon name="globe-americas"></sl-icon></td>
+                            <td class="ct-fs">Foundational Soc/Sci &nbsp;<sl-icon name="globe-americas"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time odd">9:45-10:30</td>
+                            <td class="ct-ir">Intermediate RLA &nbsp;<sl-icon name="pencil-square"></sl-icon></td>
+                            <td class="ct-ir">Intermediate RLA &nbsp;<sl-icon name="pencil-square"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time">10:30-11:15</td>
+                            <td class="ct-im">Intermediate Math &nbsp;<sl-icon name="calculator"></sl-icon></td>
+                            <td class="ct-im">Intermediate Math &nbsp;<sl-icon name="calculator"></sl-icon></td>
+                            <td class="ct-is">Intermediate Soc/Sci &nbsp;<sl-icon name="hourglass-split"></sl-icon></td>
+                            <td class="ct-is">Intermediate Soc/Sci &nbsp;<sl-icon name="hourglass-split"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time odd">11:15-12:00</td>
+                            <td class="ct-fr">Foundational RLA &nbsp;<sl-icon name="book"></sl-icon></td>
+                            <td class="ct-fr">Foundational RLA &nbsp;<sl-icon name="book"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            </tr>
+
+                            <!-- Rows 6–9 share the first column cell -->
+                            <tr>
+                            <th class="ct-period" scope="rowgroup" rowspan="4">Afternoon &nbsp;<sl-icon name="sun"></sl-icon></th>
+                            <td class="ct-time">1:00-1:45</td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-fm">Foundational Math &nbsp;<sl-icon name="percent"></sl-icon></td>
+                            <td class="ct-fm">Foundational Math &nbsp;<sl-icon name="percent"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time odd">1:45-2:30</td>
+                            <td class="ct-fs">Foundational Soc/Sci &nbsp;<sl-icon name="globe-americas"></sl-icon></td>
+                            <td class="ct-fs">Foundational Soc/Sci &nbsp;<sl-icon name="globe-americas"></sl-icon></td>
+                            <td class="ct-fr">Foundational RLA &nbsp;<sl-icon name="book"></sl-icon></td>
+                            <td class="ct-fr">Foundational RLA &nbsp;<sl-icon name="book"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time">2:30-3:15</td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-im">Intermediate Math &nbsp;<sl-icon name="calculator"></sl-icon></td>
+                            <td class="ct-im">Intermediate Math &nbsp;<sl-icon name="calculator"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time odd">3:15-4:00</td>
+                            <td class="ct-is">Intermediate Soc/Sci &nbsp;<sl-icon name="hourglass-split"></sl-icon></td>
+                            <td class="ct-is">Intermediate Soc/Sci &nbsp;<sl-icon name="hourglass-split"></sl-icon></td>
+                            <td class="ct-ir">Intermediate RLA &nbsp;<sl-icon name="pencil-square"></sl-icon></td>
+                            <td class="ct-ir">Intermediate RLA &nbsp;<sl-icon name="pencil-square"></sl-icon></td>
+                            </tr>
+
+                            <!-- Rows 10–12 share the first column cell -->
+                            <tr>
+                            <th class="ct-period" scope="rowgroup" rowspan="3">Evening &nbsp;<sl-icon name="moon"></sl-icon></th>
+                            <td class="ct-time">4:00-4:45</td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-fs">Foundational Soc/Sci &nbsp;<sl-icon name="globe-americas"></sl-icon></td>
+                            <td class="ct-fm">Foundational Math &nbsp;<sl-icon name="percent"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time odd">4:45-5:30</td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-is">Intermediate Soc/Sci &nbsp;<sl-icon name="hourglass-split"></sl-icon></td>
+                            <td class="ct-ir">Intermediate RLA &nbsp;<sl-icon name="pencil-square"></sl-icon>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            </tr>
+                            <tr>
+                            <td class="ct-time">5:30-6:15</td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            <td class="ct-im">Intermediate Math &nbsp;<sl-icon name="calculator"></sl-icon></td>
+                            <td class="ct-fr">Foundational RLA &nbsp;<sl-icon name="book"></sl-icon></td>
+                            <td class="ct-es">Open &nbsp;<sl-icon name="door-open"></sl-icon></td>
+                            </tr>
+                        </tbody>
+                        </table>
                     </div>
+                    </section>
 
-                    <div class="day tuesday">
-                        <h3 id="tuesday-header">Tuesday</h3>
-                        <div class="slot">
-                            <p class="glance-time">10:30-12:00 Noon</p>
-                            <p class="glance-title">Grammar & Writing <br>with Ryan</p>
-                        </div>
-
-                        <div class="slot">
-                            <p class="glance-time">5:00-6:30 PM</p>
-                            <p class="glance-title">Algebra <br>with Rodney</p>
-                        </div>
-                    </div>
-
-                    <div class="day wednesday">
-                        <h3 id="wednesday-header">Wednesday</h3>
-                        
-                        <div class="slot flex-slot"></div>
-                            <div>
-                                <p class="glance-time">1:00-2:00</p>
-                                <p class="glance-title">Number Sense <br>with Jennifer</p>
-                            </div>
-                            <div>
-                                <p class="glance-time">1:30-3:00 PM</p>
-                                <p class="glance-title">Geometry <br>with Rachael</p>
-                            </div>
-                    </div>
-
-                    <div class="day thursday">
-                        <h3 id="thursday-header">Thursday</h3>
-                        <div class="slot">
-                            <p class="glance-time">12:00-1:30</p>
-                            <p class="glance-title">Algebra <br>with Erin</p>
-                        </div>
-                        
-                        <div class="slot">
-                            <div>
-                                <p class="glance-time">1:00-2:30 PM</p>
-                                <p class="glance-title">Reading <br>Fundamentals <br>with Kayla</p>
-                            </div>
-
-                        </div>
-                        
-                        <div class="slot">
-                            <p class="glance-time">2:00-4:00 PM</p>
-                            <p class="glance-title">One-on-One Help <br>with Zac</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-
+           
             <article id="about">
                 <h2 class="observable">About Our Programs</h2>
-                    <p class="about observable">All adult education services are free of charge. We provide classes, tests to help determine what you should study, study materials (online and hard copy), and practice testing. The only thing students might have to pay for are official GED exams after passing practice (Ready) tests.</p>
-                    <p class="about observable">The regular cost of these tests is $30-36 each. However, Kentucky students can often take advantage of statewide promotions that reduce or waive fees altogether for a first attempt at tests, making it free! Test scholarships are also available through donations of those who support our mission.</p>
+                    <p class="about observable">All adult education services are free of charge. We provide classes, tests to help determine what you should study, study materials (online and hard copy), and practice testing. The only thing students might have to pay for are official GED exams after passing official practice tests (GED Ready).</p>
+                    <p class="about observable">The regular cost of these tests is $36 each. However, Kentucky students can often take advantage of statewide promotions that reduce or waive fees altogether for a first attempt at tests, making it free! Test scholarships are also available through donations of those who support our mission.</p>
             </article>
 
             <aside id="contact">
@@ -263,6 +326,7 @@
                     <p>606.549.1989</p>
                 </div>
             </div>
+        <div id="ethics-step">&nbsp;</div>
 
             <p class="bottom-credit" id="bottom-credit"> </p>
 
