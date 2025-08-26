@@ -128,7 +128,12 @@ dialog::backdrop {
 
 .interior {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.interior a button {
+  width: 97vw;
 }
   
 .btn {
@@ -470,6 +475,14 @@ footer {
   .modal-announce > h2 {
     font-size: 3.5em;
     animation: 3s 1 pulse;
+  }
+
+  .interior {
+    flex-direction: row;
+  }
+
+  .interior a button {
+    width: unset;
   }
 
   @keyframes pulse {
