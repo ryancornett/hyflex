@@ -52,11 +52,11 @@ const NOTE_START = "<p class='course-note'><b>";
 const NOTE_END = "</b></p>"
 
 const mathCourses = [
-    new Course("Foundational Math #1", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+    new Course("Foundational Math #1", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
     new Course("Intermediate Math #1", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, IM_Overview, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", "(606) 528-0379"),
 
-    new Course("Foundational Math #2", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+    new Course("Foundational Math #2", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
     new Course("Intermediate Math #2", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, IM_Overview, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", "(606) 528-0379"),
 
@@ -76,11 +76,11 @@ const mathCourses = [
 const rlaCourses = [
     new Course("Intermediate RLA #1", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, IR_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
 
-    new Course("Foundational RLA #1", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+    new Course("Foundational RLA #1", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
     new Course("Intermediate RLA #2", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, IR_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
 
-    new Course("Foundational RLA #2", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
+    new Course("Foundational RLA #2", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, FR_Overview, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", "(606) 878-9134"),
 
     new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 878-9134"),
 
@@ -104,15 +104,15 @@ const soc_SciCourses = [
 
     new Course("Intermediate Soc/Sci #2", "Tuesday", "3:15-4:00", IS_Folder, WHITLEY_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", "(606) 549-1989"),
 
-    new Course("Foundational Soc/Sci #3", "Tuesday", "4:00-4:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+    new Course("Foundational Soc/Sci #3", "Tuesday", "4:00-4:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
 
     new Course("Intermediate Soc/Sci #3", "Tuesday", "4:45-5:30", IS_Folder, LONDON_ZOOM, IS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", "(606) 549-1989"),
 
-    new Course("Foundational Soc/Sci #4", "Wednesday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+    new Course("Foundational Soc/Sci #4", "Wednesday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
 
     new Course("Intermediate Soc/Sci #4", "Wednesday", "10:30-11:15", IS_Folder, CLAY_ZOOM, IS_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
 
-    new Course("Foundational Soc/Sci #5", "Thursday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/icon-person.svg", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
+    new Course("Foundational Soc/Sci #5", "Thursday", "9:00-9:45", FS_Folder, KNOX_ZOOM, FS_Overview, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", "(606) 878-9134"),
 
     new Course("Intermediate Soc/Sci #5", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, IS_Overview, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", "(606) 599-1230"),
 ];
