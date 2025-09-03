@@ -30,7 +30,7 @@ function getTierSubjectClass(name) {
     }
 }
 const CLAY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
-const KNOX_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
+const KNOX_ZOOM = null; // Candace set up 3 different recurring meetings for her classes in Knox
 const LONDON_ZOOM = `https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09`;
 const CORBIN_ZOOM = `https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09`;
 const WHITLEY_ZOOM = `https://us02web.zoom.us/j/86209979595?pwd=zbLnB1OvbUccvP5HeKvgU1YJNfYebj.1`;
@@ -89,15 +89,15 @@ const rlaCourses = [
 
     new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
-    new Course("Intermediate RLA #3", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
+    new Course("Intermediate RLA #3", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
 
-    new Course("Intermediate RLA #4", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE),
+    new Course("Intermediate RLA #4", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc_v2.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE),
 
-    new Course("Foundational RLA #4", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, FR_Overview, "img/icon-person.svg", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE),
+    new Course("Foundational RLA #4", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, FR_Overview, "img/demah.webp", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE),
 
     new Course("Foundational RLA #5", "Thursday", "1:45-2:30", FR_Folder, WHITLEY_ZOOM, FR_Overview, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE),
 
-    new Course("Intermediate RLA #5", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
+    new Course("Intermediate RLA #5", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
 ];
 
 const soc_SciCourses = [
