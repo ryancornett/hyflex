@@ -31,9 +31,10 @@ function getTierSubjectClass(name) {
 }
 const CLAY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
 const KNOX_ZOOM = null; // Candace set up 3 different recurring meetings for her classes in Knox
+const KAYLA_ZOOM = "https://us06web.zoom.us/j/89007426822";
+const ZAC_ZOOM = "https://us06web.zoom.us/j/83660895039?pwd=NCtBUWNBUTJlazBUeHN0OW9jT2RBUT09"
 const LONDON_ZOOM = `https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09`;
 const CORBIN_ZOOM = `https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09`;
-const WHITLEY_ZOOM = `https://us02web.zoom.us/j/86209979595?pwd=zbLnB1OvbUccvP5HeKvgU1YJNfYebj.1`;
 const CLAY_PHONE = "(606) 599-1230";
 const KNOX_PHONE = "(606) 645-2340";
 const LONDON_PHONE = "(606) 878-9134";
@@ -95,7 +96,7 @@ const rlaCourses = [
 
     new Course("Foundational RLA #4", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, FR_Overview, "img/demah.webp", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE),
 
-    new Course("Foundational RLA #5", "Thursday", "1:45-2:30", FR_Folder, WHITLEY_ZOOM, FR_Overview, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE),
+    new Course("Foundational RLA #5", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, FR_Overview, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE),
 
     new Course("Intermediate RLA #5", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
 ];
@@ -103,11 +104,11 @@ const rlaCourses = [
 const soc_SciCourses = [
     new Course("Foundational Soc/Sci #1", "Monday", "1:45-2:30", FS_Folder, LONDON_ZOOM, FS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
-    new Course("Intermediate Soc/Sci #1", "Monday", "3:15-4:00", IS_Folder, WHITLEY_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
+    new Course("Intermediate Soc/Sci #1", "Monday", "3:15-4:00", IS_Folder, ZAC_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
 
     new Course("Foundational Soc/Sci #2", "Tuesday", "1:45-2:30", FS_Folder, LONDON_ZOOM, FS_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
-    new Course("Intermediate Soc/Sci #2", "Tuesday", "3:15-4:00", IS_Folder, WHITLEY_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
+    new Course("Intermediate Soc/Sci #2", "Tuesday", "3:15-4:00", IS_Folder, ZAC_ZOOM, IS_Overview, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
 
     new Course("Foundational Soc/Sci #3", "Tuesday", "4:00-4:45", FS_Folder, "https://us02web.zoom.us/j/86366565815", FS_Overview, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE),
 
