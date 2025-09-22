@@ -76,7 +76,7 @@ const mathCourses = [
 
     new Course("Foundational Math #5", "Wednesday", "1:00-1:45", FM_Folder, LONDON_ZOOM, FM_Overview, "img/icon-person.svg", "TBA", "info@laureladulted.org", CORBIN_PHONE),
 
-    new Course("Intermediate Math #5", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, IM_Overview, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
+    new Course("Intermediate Math #5", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview} ${NOTE_START}No class 9/25${NOTE_END}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
 ];
 
 const rlaCourses = [

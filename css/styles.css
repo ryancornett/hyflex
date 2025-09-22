@@ -103,7 +103,7 @@ dialog::backdrop {
     background-color: rgb(205, 255, 205);
 }
 
-.course-note { color:red; font-weight:200; font-size: 0.8rem; }
+.course-note { color:red; font-weight:500; font-size: 0.8rem; text-align: end; padding-right: 2rem;}
 
 
 
