@@ -98,7 +98,7 @@ const rlaCourses = [
 
     new Course("Foundational RLA #5", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, FR_Overview, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE),
 
-    new Course("Intermediate RLA #5", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, IR_Overview, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
+    new Course("Intermediate RLA #5", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview} ${NOTE_START}No class 9/25${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
 ];
 
 const soc_SciCourses = [
