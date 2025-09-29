@@ -74,7 +74,7 @@ const mathCourses = [
 
     new Course("Foundational Math #4", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
 
-    new Course("Foundational Math #5", "Wednesday", "1:00-1:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", CORBIN_PHONE),
+    // new Course("Foundational Math #5", "Wednesday", "1:00-1:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", CORBIN_PHONE),
 
     new Course("Intermediate Math #5", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
 ];
@@ -88,7 +88,7 @@ const rlaCourses = [
 
     new Course("Foundational RLA #2", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE),
 
-    new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
+    // new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
     new Course("Intermediate RLA #3", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE),
 
@@ -102,17 +102,17 @@ const rlaCourses = [
 ];
 
 const soc_SciCourses = [
-    new Course("Foundational Soc/Sci #1", "Monday", "1:45-2:30", FS_Folder, LONDON_ZOOM, `${FS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
+    // new Course("Foundational Soc/Sci #1", "Monday", "1:45-2:30", FS_Folder, LONDON_ZOOM, `${FS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
     new Course("Intermediate Soc/Sci #1", "Monday", "3:15-4:00", IS_Folder, ZAC_ZOOM, `${IS_Overview}`, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
 
-    new Course("Foundational Soc/Sci #2", "Tuesday", "1:45-2:30", FS_Folder, LONDON_ZOOM, `${FS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
+    // new Course("Foundational Soc/Sci #2", "Tuesday", "1:45-2:30", FS_Folder, LONDON_ZOOM, `${FS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
     new Course("Intermediate Soc/Sci #2", "Tuesday", "3:15-4:00", IS_Folder, ZAC_ZOOM, `${IS_Overview}`, "img/zacg.webp", "Zac Gibbins", "zac.gibbins@whitley.kyschools.us", WHITLEY_PHONE),
 
     new Course("Foundational Soc/Sci #3", "Tuesday", "4:00-4:45", FS_Folder, "https://us02web.zoom.us/j/86366565815", `${FS_Overview}`, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE),
 
-    new Course("Intermediate Soc/Sci #3", "Tuesday", "4:45-5:30", IS_Folder, LONDON_ZOOM, `${IS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
+    // new Course("Intermediate Soc/Sci #3", "Tuesday", "4:45-5:30", IS_Folder, LONDON_ZOOM, `${IS_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
     new Course("Foundational Soc/Sci #4", "Wednesday", "9:00-9:45", FS_Folder, "https://us02web.zoom.us/j/88205176530", `${FS_Overview}`, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE),
 

@@ -12,6 +12,14 @@ caption {
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 0.75rem;
+    position: relative;
+}
+caption::before {
+    content: "Scroll →";
+    font-family: serif;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
 }
 .ct-time {
     text-align: end;

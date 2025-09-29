@@ -106,9 +106,6 @@ dialog::backdrop {
 .course-note { color:red; font-weight:500; font-size: 0.8rem; text-align: end; padding-right: 2rem;}
 
 
-
-
-
 /* ------------------MODAL SECTION------------------- */
 
 .modal-announce {
@@ -452,12 +449,16 @@ footer {
   transform: translateY(0px);
 }
 
-
+.pill {margin: auto; padding: 0.75rem 1.25rem; background-color: #eed202; color: black; font-weight: bold; border-radius: 15px;}
 
 
 @media (min-width: 913px) {
 
   nav {
+    display: none;
+  }
+
+  caption::before {
     display: none;
   }
 
