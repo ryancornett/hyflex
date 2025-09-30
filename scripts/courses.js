@@ -73,8 +73,8 @@ const mathCourses = [
     new Course("Intermediate Math #4", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE),
 
     new Course("Foundational Math #4", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
-
-    // new Course("Foundational Math #5", "Wednesday", "1:00-1:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", CORBIN_PHONE),
+    // following was not signed up for by any instructor
+    // new Course("Foundational Math #5", "Thursday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE),
 
     new Course("Intermediate Math #5", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE),
 ];
@@ -132,6 +132,7 @@ function generateSubjectDiv(subject, container, parent) {
     for (let i = 0; i < subject.length; i++) {
     let courseName = document.createElement("h3");
     courseName.setAttribute("class", "course-name");
+    courseName.setAttribute("id", i);
     courseName.classList.add(getTierSubjectClass(subject[i].name))
     courseName.innerText = subject[i].name;
     parent.appendChild(courseName);
@@ -184,4 +185,4 @@ function generateSubjectDiv(subject, container, parent) {
     container.appendChild(parent);
   }};
 
-export { mathCourses, rlaCourses as englishCourses, soc_SciCourses as otherCourses, generateSubjectDiv };
+export { mathCourses, rlaCourses, soc_SciCourses as otherCourses, generateSubjectDiv };
