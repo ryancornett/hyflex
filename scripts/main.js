@@ -4,7 +4,35 @@ import {
   rlaCourses,
   otherCourses,
   generateSubjectDiv,
+  displayQuickGrid,
 } from "./courses.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  displayQuickGrid();
+  const mathClickables = document.querySelectorAll(".cal-math");
+  mathClickables.forEach((clickable) => {
+    clickable.addEventListener("click", () => {
+      generateSubjectDiv(mathCourses, mathContainer, courseDiv);
+      MATH_MODAL.showModal();
+      document.getElementById(clickable.dataset.anchor).scrollIntoView();
+    });
+  });
+  const rlaClickables = document.querySelectorAll(".cal-rla");
+  rlaClickables.forEach((clickable) => {
+    clickable.addEventListener("click", () => {
+      generateSubjectDiv(rlaCourses, rlaContainer, courseDiv);
+      RLA_MODAL.showModal();
+      document.getElementById(clickable.dataset.anchor).scrollIntoView();
+    });
+  });
+  const ssClickables = document.querySelectorAll(".cal-ss");
+  ssClickables.forEach((clickable) => {
+    clickable.addEventListener("click", () => {
+      displayOtherModal();
+      document.getElementById(clickable.dataset.anchor).scrollIntoView();
+    });
+  });
+});
 
 const topButton = document.getElementById("to-top");
 
@@ -47,15 +75,8 @@ function displayMathModal() {
   generateSubjectDiv(mathCourses, mathContainer, courseDiv);
   MATH_MODAL.showModal();
 }
-MATH_BUTTON.addEventListener("click", () => { displayMathModal() });
-
-const mathClickables = document.querySelectorAll(".cal-math");
-mathClickables.forEach((clickable) => {
-  clickable.addEventListener("click", () => {
-    generateSubjectDiv(mathCourses, mathContainer, courseDiv);
-    MATH_MODAL.showModal();
-    document.getElementById(clickable.dataset.anchor).scrollIntoView();
-  });
+MATH_BUTTON.addEventListener("click", () => {
+  displayMathModal();
 });
 
 let closeMathButton = document.querySelectorAll(".close-math");
@@ -71,15 +92,8 @@ function displayRlaModal() {
   generateSubjectDiv(rlaCourses, rlaContainer, courseDiv);
   RLA_MODAL.showModal();
 }
-RLA_BUTTON.addEventListener("click", () => { displayRlaModal() });
-
-const rlaClickables = document.querySelectorAll(".cal-rla");
-rlaClickables.forEach((clickable) => {
-  clickable.addEventListener("click", () => {
-    generateSubjectDiv(rlaCourses, rlaContainer, courseDiv);
-    RLA_MODAL.showModal();
-    document.getElementById(clickable.dataset.anchor).scrollIntoView();
-  });
+RLA_BUTTON.addEventListener("click", () => {
+  displayRlaModal();
 });
 
 let closeRlaButton = document.querySelectorAll(".close-rla");
@@ -95,13 +109,8 @@ function displayOtherModal() {
   generateSubjectDiv(otherCourses, otherContainer, courseDiv);
   OTHER_MODAL.showModal();
 }
-OTHER_BUTTON.addEventListener("click", () => { displayOtherModal() });
-const ssClickables = document.querySelectorAll(".cal-ss");
-ssClickables.forEach((clickable) => {
-  clickable.addEventListener("click", () => {
-    displayOtherModal();
-    document.getElementById(clickable.dataset.anchor).scrollIntoView();
-  });
+OTHER_BUTTON.addEventListener("click", () => {
+  displayOtherModal();
 });
 
 let closeOtherButton = document.querySelectorAll(".close-other");
@@ -140,11 +149,11 @@ if (openGlance) {
   });
 }
 
-if (window.innerWidth > 912 && glance) {
-  glance.style.maxHeight = "2000px";
-  glance.style.scale = "1 1";
-  glanceWrapper.style.visibility = "visible";
-}
+// if (window.innerWidth > 912 && glance) {
+//   glance.style.maxHeight = "2000px";
+//   glance.style.scale = "1 1";
+//   glanceWrapper.style.visibility = "visible";
+// }
 
 let options = {
   root: null,
