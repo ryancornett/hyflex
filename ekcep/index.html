@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open Jobs - EKCEP Region</title>
+  <link rel="stylesheet" href="jobs.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div id="jobs-header">
+      <h1>Open Jobs - EKCEP Region</h1>
+      <a href="https://hyflexky.com" class="back-link">← Back to HyFlex</a>
+    </div>
+    <p>Last updated: <span id="updated"></span></p>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search job title, employer, or location…" aria-label="Search jobs" />
+      <select id="socFilter" aria-label="Filter by occupation">
+        <option value="">All occupations</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="cards" class="card-grid" aria-live="polite"></section>
+  </main>
+
+  <template id="job-card-template">
+    <article class="card">
+      <div class="card-head">
+        <span class="pill location"></span>
+        <span class="pill soc" title=""></span>
+      </div>
+      <h2 class="title"></h2>
+      <div class="meta">
+        <div class="employer"></div>
+        <div class="wage"></div>
+      </div>
+      <a class="btn" target="_blank" rel="noopener noreferrer">View posting</a>
+    </article>
+  </template>
+
+  <footer>
+    <h3>Laurel Adult Literacy Council</h3>
+    <a href="https://hyflexky.com" class="back-link">← Back to HyFlex</a>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+  // --- Example data (replace with your own feed or inlined JSON) ---
+  window.JOB_DATA = [];
+  </script>
+</body>
+</html>

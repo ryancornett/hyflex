@@ -414,7 +414,23 @@ footer {
     padding-bottom: 2rem;
 }
 
+.jobs {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 100vw;
+  background: black;
+  transition: color ease-in-out 200ms;
+}
 
+.jobs:hover { background: #221;}
+
+.jobs a {
+  color: white;
+  text-decoration: none;
+}
 
 .bottom-credit {
     text-align: center;
