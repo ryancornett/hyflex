@@ -114,3 +114,19 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+.pager{
+  max-width: 1200px; margin: 16px auto 64px; padding: 0 16px;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px;
+}
+.pager-left, .pager-right{ display:flex; align-items:center; gap:8px; color:#cbd5e1; }
+.pager-center{ display:flex; gap:6px; flex-wrap:wrap; justify-content:center; }
+.pager button{
+  background:#0f1318; color:#e6e8eb; border:1px solid #1e2630; border-radius:10px;
+  padding:8px 10px; min-width:38px; cursor:pointer;
+}
+.pager button[disabled]{ opacity:.5; cursor:not-allowed; }
+.pager button.is-active{
+  background: linear-gradient(180deg, #5b93ff, #3f7cf7);
+  border-color: transparent; color:white; font-weight:600;
+}
