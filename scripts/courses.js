@@ -167,7 +167,7 @@ const soc_SciCourses = [
 
     new Course(Tiers.F, Subjects.S, "#05", "Thursday", "9:00-9:45", FS_Folder, "https://us02web.zoom.us/j/87655095797", `${FS_Overview}`, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE, "d1"),
 
-    new Course(Tiers.I, Subjects.S, "#05", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}${NOTE_START}No class 10/9${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "d3"),
+    new Course(Tiers.I, Subjects.S, "#05", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "d3"),
 ];
 
 function generateSubjectDiv(subject, container, parent) {
