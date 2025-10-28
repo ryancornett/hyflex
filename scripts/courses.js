@@ -137,15 +137,15 @@ const rlaCourses = [
 
     // new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
-    new Course(Tiers.I, Subjects.R, "#03", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "c8"),
+    new Course(Tiers.I, Subjects.R, "#03", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}${NOTE_START}No class 10/29${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "c8"),
 
-    new Course(Tiers.I, Subjects.R, "#04", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE, "c10"),
+    new Course(Tiers.I, Subjects.R, "#04", "Wednesday", "4:45-5:30", IR_Folder, LONDON_ZOOM, `${IR_Overview}${IR_Overview}${NOTE_START}No class 10/29${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE, "c10"),
 
     new Course(Tiers.F, Subjects.R, "#04", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/demah.webp", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE, "c11"),
 
     new Course(Tiers.F, Subjects.R, "#05", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, `${FR_Overview}`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE, "d6"),
 
-    new Course(Tiers.I, Subjects.R, "#05", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d8"),
+    new Course(Tiers.I, Subjects.R, "#05", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}${IR_Overview}${NOTE_START}No class 10/30${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d8"),
 ];
 
 const soc_SciCourses = [
