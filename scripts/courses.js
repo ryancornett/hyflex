@@ -114,7 +114,7 @@ const mathCourses = [
 
     new Course(Tiers.I, Subjects.M, "#03", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, `${IM_Overview}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", CLAY_PHONE, "b11"),
 
-    new Course(Tiers.F, Subjects.M, "#03", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
+    new Course(Tiers.F, Subjects.M, "#03", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}${NOTE_START}No class 11/26${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
 
     new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
 
@@ -172,10 +172,13 @@ const soc_SciCourses = [
 
 function generateSubjectDiv(subject, container, parent) {
     parent.innerHTML = "";
-    // const announcement = document.createElement('h4');
-    // announcement.classList.add('announcement');
-    // announcement.textContent = "Classes resume 9/2/2025";
-    // parent.appendChild(announcement);
+    // COMMENT OUT ANNOUNCEMENT BELOW WHEN NOT IN USE
+    const announcement = document.createElement('h4');
+    announcement.classList.add('announcement');
+    announcement.textContent = "No classes 11/27/2025";
+    parent.appendChild(announcement);
+    // COMMENT OUT ANNOUNCEMENT ABOVE WHEN NOT IN USE
+
     for (let i = 0; i < subject.length; i++) {
     let courseName = document.createElement("h3");
     courseName.setAttribute("class", "course-name");
