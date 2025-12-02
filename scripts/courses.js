@@ -114,7 +114,7 @@ const mathCourses = [
 
     new Course(Tiers.I, Subjects.M, "#03", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, `${IM_Overview}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", CLAY_PHONE, "b11"),
 
-    new Course(Tiers.F, Subjects.M, "#03", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}${NOTE_START}No class 11/26${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
+    new Course(Tiers.F, Subjects.M, "#03", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
 
     new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
 
@@ -137,15 +137,15 @@ const rlaCourses = [
 
     // new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
-    new Course(Tiers.I, Subjects.R, "#03", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}${NOTE_START}No class 10/29${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "c8"),
+    new Course(Tiers.I, Subjects.R, "#03", "Wednesday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "c8"),
 
-    new Course(Tiers.I, Subjects.R, "#04", "Wednesday", "4:45-5:30", IR_Folder, LONDON_ZOOM, `${IR_Overview}${IR_Overview}${NOTE_START}No class 10/29${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE, "c10"),
+    new Course(Tiers.I, Subjects.R, "#04", "Wednesday", "4:45-5:30", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut & Dema Hacker", "rachael@laureladulted.org", LONDON_PHONE, "c10"),
 
     new Course(Tiers.F, Subjects.R, "#04", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/demah.webp", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE, "c11"),
 
     new Course(Tiers.F, Subjects.R, "#05", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, `${FR_Overview}`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE, "d6"),
 
-    new Course(Tiers.I, Subjects.R, "#05", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}${IR_Overview}${NOTE_START}No class 10/30${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d8"),
+    new Course(Tiers.I, Subjects.R, "#05", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d8"),
 ];
 
 const soc_SciCourses = [
@@ -173,10 +173,12 @@ const soc_SciCourses = [
 function generateSubjectDiv(subject, container, parent) {
     parent.innerHTML = "";
     // COMMENT OUT ANNOUNCEMENT BELOW WHEN NOT IN USE
-    const announcement = document.createElement('h4');
-    announcement.classList.add('announcement');
-    announcement.textContent = "No classes 11/27/2025";
-    parent.appendChild(announcement);
+
+    // const announcement = document.createElement('h4');
+    // announcement.classList.add('announcement');
+    // announcement.textContent = "No classes 11/27/2025";
+    // parent.appendChild(announcement);
+
     // COMMENT OUT ANNOUNCEMENT ABOVE WHEN NOT IN USE
 
     for (let i = 0; i < subject.length; i++) {
