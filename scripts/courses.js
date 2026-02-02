@@ -174,10 +174,10 @@ function generateSubjectDiv(subject, container, parent) {
     parent.innerHTML = "";
     // COMMENT OUT ANNOUNCEMENT BELOW WHEN NOT IN USE
 
-    const announcement = document.createElement('h4');
-    announcement.classList.add('announcement');
-    announcement.textContent = "Possibly unavailable due to power outages";
-    parent.appendChild(announcement);
+    // const announcement = document.createElement('h4');
+    // announcement.classList.add('announcement');
+    // announcement.textContent = "Possibly unavailable due to power outages";
+    // parent.appendChild(announcement);
 
     // COMMENT OUT ANNOUNCEMENT ABOVE WHEN NOT IN USE
 
