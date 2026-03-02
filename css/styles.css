@@ -216,7 +216,7 @@ dialog::backdrop {
   grid-auto-columns: 1fr;
   gap: 2px 2px;
   grid-auto-flow: row;
-  margin: 1rem 0 5rem 0;
+  margin: 1rem 0 8rem 0;
 }
 
 .picture {
