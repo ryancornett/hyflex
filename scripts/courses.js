@@ -127,7 +127,7 @@ const mathCourses = [
 ];
 
 const rlaCourses = [
-    new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}${NOTE_START}No class 3/9/2026${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
+    new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
 
     new Course(Tiers.F, Subjects.R, "#01", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a4"),
 
