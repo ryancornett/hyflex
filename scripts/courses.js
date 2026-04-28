@@ -110,7 +110,7 @@ const mathCourses = [
 
     new Course(Tiers.F, Subjects.M, "#02", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b1"),
 
-    new Course(Tiers.I, Subjects.M, "#02", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b3"),
+    new Course(Tiers.I, Subjects.M, "#02", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}${NOTE_START}No class 4/28${NOTE_END}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b3"),
 
     new Course(Tiers.I, Subjects.M, "#03", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, `${IM_Overview}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", CLAY_PHONE, "b11"),
 
