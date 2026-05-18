@@ -77,7 +77,7 @@ const comingSoonCells = [
 const CLAY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
 const KNOX_ZOOM = null; // Candace set up 3 different recurring meetings for her classes in Knox
 const KAYLA_ZOOM = "https://us06web.zoom.us/j/81133947947?pwd=er2aTKgnOPGSOZPWDXvlmE4oa7nobx.1";
-const ZAC_ZOOM = "https://us06web.zoom.us/j/83660895039?pwd=NCtBUWNBUTJlazBUeHN0OW9jT2RBUT09"
+const ZAC_ZOOM = "https://us02web.zoom.us/j/86209979595?pwd=zbLnB1OvbUccvP5HeKvgU1YJNfYebj.1";
 const LONDON_ZOOM = `https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09`;
 const CORBIN_ZOOM = `https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09`;
 const CLAY_PHONE = "(606) 599-1230";
