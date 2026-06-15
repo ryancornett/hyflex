@@ -1,4 +1,3 @@
-// app.js
 (function () {
   const elCards = document.getElementById("cards");
   const tpl = document.getElementById("job-card-template");

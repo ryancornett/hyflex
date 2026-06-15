@@ -13,7 +13,7 @@
 html,body { height: 100%; }
 body{
   margin: 0;
-  font-family: 'Poppins', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--text);
   background: radial-gradient(1200px 800px at 20% -10%, #1a2230 0%, #0b0d10 60%);
 }
@@ -80,7 +80,7 @@ body{
   background: linear-gradient(180deg, #2060df, #1151d1);
   color: white; border: 0; border-radius: 12px; padding: 12px 14px;
   font-weight: 600; text-decoration: none;
-  box-shadow: 0 6px 16px rgba(79,140,255,.35);
+  /* box-shadow: 0 6px 16px rgba(79,140,255,.35); */
   transition: transform .05s ease, filter .15s ease, box-shadow .15s ease;
 }
 .btn:hover{ filter: brightness(1.15); }
