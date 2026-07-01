@@ -68,6 +68,10 @@ const openCells = ['c2', 'd2', 'c4', 'd4', 'a5', 'b5', 'a7', 'b7', 'a9', 'd9', '
 
 // add 'coming soon' class slot <td> id attributes to cell and other corresponding info 
 const comingSoonCells = [
+    {cell: 'a1', tier: Tiers.F, subject:Subjects.M},
+    {cell: 'a4', tier: Tiers.F, subject:Subjects.R},
+    {cell: 'b1', tier: Tiers.F, subject:Subjects.M},
+    {cell: 'b4', tier: Tiers.F, subject:Subjects.R},
     {cell: 'd5', tier: Tiers.F, subject:Subjects.M},
     {cell: 'a6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'b6', tier: Tiers.F, subject:Subjects.S},
@@ -104,11 +108,11 @@ const NOTE_START = "<p class='course-note'><b>";
 const NOTE_END = "</b></p>"
 
 const mathCourses = [
-    new Course(Tiers.F, Subjects.M, "#01", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a1"),
+    // new Course(Tiers.F, Subjects.M, "#01", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a1"),
 
     new Course(Tiers.I, Subjects.M, "#01", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, `${IM_Overview}${NOTE_START}No class 7/6${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a3"),
 
-    new Course(Tiers.F, Subjects.M, "#02", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b1"),
+    // new Course(Tiers.F, Subjects.M, "#02", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b1"),
 
     new Course(Tiers.I, Subjects.M, "#02", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}${NOTE_START}No class 6/30${NOTE_END}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b3"),
 
@@ -129,11 +133,11 @@ const mathCourses = [
 const rlaCourses = [
     new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
 
-    new Course(Tiers.F, Subjects.R, "#01", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a4"),
+    // new Course(Tiers.F, Subjects.R, "#01", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a4"),
 
     new Course(Tiers.I, Subjects.R, "#02", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "b2"),
 
-    new Course(Tiers.F, Subjects.R, "#02", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b4"),
+    // new Course(Tiers.F, Subjects.R, "#02", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b4"),
 
     // new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
