@@ -76,11 +76,12 @@ const comingSoonCells = [
     {cell: 'a6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'b6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'c6', tier: Tiers.F, subject:Subjects.R},
+    {cell: 'd6', tier: Tiers.F, subject:Subjects.R},
     {cell: 'b10', tier: Tiers.I, subject:Subjects.S}
 ];
 const CLAY_ZOOM = `https://us02web.zoom.us/j/3619478526?pwd=WkJZUUUzdUx3dVp5RVdoV1h0amF0QT09`;
 const KNOX_ZOOM = null; // Candace set up 3 different recurring meetings for her classes in Knox
-const KAYLA_ZOOM = "https://us06web.zoom.us/j/81133947947?pwd=er2aTKgnOPGSOZPWDXvlmE4oa7nobx.1";
+// const KAYLA_ZOOM = "https://us06web.zoom.us/j/81133947947?pwd=er2aTKgnOPGSOZPWDXvlmE4oa7nobx.1";
 const ZAC_ZOOM = "https://us02web.zoom.us/j/86209979595?pwd=zbLnB1OvbUccvP5HeKvgU1YJNfYebj.1";
 const LONDON_ZOOM = `https://us02web.zoom.us/j/6447967863?pwd=aldCSW50bGlPVzhHMi9oczR4QUJUQT09`;
 const CORBIN_ZOOM = `https://us02web.zoom.us/j/4974845563?pwd=Q1ErU2gzaW9oNiszYmkyZXRVajRSUT09`;
@@ -124,18 +125,15 @@ const mathCourses = [
 
     new Course(Tiers.F, Subjects.M, "#04", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "c9"),
 
-    // following was not signed up for by any instructor
-    // new Course("Foundational Math #5", "Thursday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE),
-
     new Course(Tiers.I, Subjects.M, "#05", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "d7"),
 ];
 
 const rlaCourses = [
-    new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}${NOTE_START}No class 7/20${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
+    new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
 
     // new Course(Tiers.F, Subjects.R, "#01", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a4"),
 
-    new Course(Tiers.I, Subjects.R, "#02", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}${NOTE_START}No class 7/21${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "b2"),
+    new Course(Tiers.I, Subjects.R, "#02", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "b2"),
 
     // new Course(Tiers.F, Subjects.R, "#02", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b4"),
 
@@ -147,7 +145,7 @@ const rlaCourses = [
 
     new Course(Tiers.F, Subjects.R, "#04", "Wednesday", "5:30-6:15", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/demah.webp", "Dema Hacker", "dema@laureladulted.org", LONDON_PHONE, "c11"),
 
-    new Course(Tiers.F, Subjects.R, "#05", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, `${FR_Overview}`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE, "d6"),
+    // new Course(Tiers.F, Subjects.R, "#05", "Thursday", "1:45-2:30", FR_Folder, KAYLA_ZOOM, `${FR_Overview}`, "img/kaylaj.webp", "Kayla Jones", "kayla.jones@whitley.kyschools.us", WHITLEY_PHONE, "d6"),
 
     new Course(Tiers.I, Subjects.R, "#05", "Thursday", "3:15-4:00", IR_Folder, LONDON_ZOOM, `${IR_Overview}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d8"),
 ];
@@ -167,11 +165,11 @@ const soc_SciCourses = [
 
     new Course(Tiers.F, Subjects.S, "#04", "Wednesday", "9:00-9:45", FS_Folder, "https://us02web.zoom.us/j/88205176530", `${FS_Overview}`, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE, "c1"),
 
-    new Course(Tiers.I, Subjects.S, "#04", "Wednesday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}${NOTE_START}No class 7/22${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "c3"),
+    new Course(Tiers.I, Subjects.S, "#04", "Wednesday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "c3"),
 
     new Course(Tiers.F, Subjects.S, "#05", "Thursday", "9:00-9:45", FS_Folder, "https://us02web.zoom.us/j/87655095797", `${FS_Overview}`, "img/candaces.webp", "Candace Smith", "candace.smith@knox.kyschools.us", KNOX_PHONE, "d1"),
 
-    new Course(Tiers.I, Subjects.S, "#05", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}${NOTE_START}No class 7/23${NOTE_END}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "d3"),
+    new Course(Tiers.I, Subjects.S, "#05", "Thursday", "10:30-11:15", IS_Folder, CLAY_ZOOM, `${IS_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "d3"),
 ];
 
 function generateSubjectDiv(subject, container, parent) {
