@@ -69,10 +69,7 @@ const openCells = ['c2', 'd2', 'c4', 'd4', 'a5', 'b5', 'a7', 'b7', 'a9', 'd9', '
 // add 'coming soon' class slot <td> id attributes to cell and other corresponding info 
 const comingSoonCells = [
     {cell: 'a1', tier: Tiers.F, subject:Subjects.M},
-    {cell: 'a4', tier: Tiers.F, subject:Subjects.R},
     {cell: 'b1', tier: Tiers.F, subject:Subjects.M},
-    {cell: 'b4', tier: Tiers.F, subject:Subjects.R},
-    {cell: 'd5', tier: Tiers.F, subject:Subjects.M},
     {cell: 'a6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'b6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'c6', tier: Tiers.F, subject:Subjects.R},
@@ -113,18 +110,22 @@ const mathCourses = [
 
     new Course(Tiers.I, Subjects.M, "#01", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a3"),
 
-    // new Course(Tiers.F, Subjects.M, "#02", "Tuesday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b1"),
+    new Course(Tiers.F, Subjects.M, "- Ready to Test", "Monday", "11:15-12:00", FM_Folder, LONDON_ZOOM, `The First Five: math without a calculator.${NOTE_START}Beginning 8/10/2026${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a4"),
 
     new Course(Tiers.I, Subjects.M, "#02", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b3"),
+    
+    new Course(Tiers.I, Subjects.M, "- Ready to Test", "Tuesday", "11:15-12:00", IM_Folder, CORBIN_ZOOM, `Calculator Confidence. **NOTE: attendees can use a borrowed calculator (TI-30XS), or can access one via Android app or <a href="https://gedonline.org/ged2015/calculator/calculator.html" target="_blank" style="font-weight:bold;">here</a>.${NOTE_START}Beginning 8/11/2026${NOTE_END}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b4"),
 
     new Course(Tiers.I, Subjects.M, "#03", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, `${IM_Overview}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", CLAY_PHONE, "b11"),
 
-    new Course(Tiers.F, Subjects.M, "#03", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
+    new Course(Tiers.F, Subjects.M, "#01", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
 
     new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
 
-    new Course(Tiers.F, Subjects.M, "#04", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "c9"),
+    new Course(Tiers.F, Subjects.M, "#02", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "c9"),
 
+    new Course(Tiers.I, Subjects.M, "- Ready to Test", "Thursday", "1:00-1:45", IM_Overview, LONDON_ZOOM, `Last-Minute Math: a live test-prep session.${NOTE_START}Beginning 8/13/2026${NOTE_END}`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d5"),
+    
     new Course(Tiers.I, Subjects.M, "#05", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "d7"),
 ];
 
