@@ -1,7 +1,7 @@
 class Course {
-    constructor(tier, subject, name, days, time, syllabus, zoom, description, picture, instructor, email, phone, grid) {
+    constructor(tier, subject, name, days, time, syllabus, zoom, description, picture, instructor, email, phone, grid, special = "") {
         this.id = crypto.randomUUID();
-        Object.assign(this, { tier, subject, name, days, time, syllabus, zoom, description, picture, instructor, email, phone, grid })
+        Object.assign(this, { tier, subject, name, days, time, syllabus, zoom, description, picture, instructor, email, phone, grid, special })
     }
 }
 
@@ -64,7 +64,7 @@ function getTierSubjectClass(name) {
 }
 
 // add open class slot <td> id attributes to openCells 
-const openCells = ['c2', 'd2', 'c4', 'd4', 'a5', 'b5', 'a7', 'b7', 'a9', 'd9', 'a10', 'd10', 'a11', 'd11'];
+const openCells = ['c2', 'd2', 'c4', 'd4', 'a5', 'b5', 'c6','a7', 'b7', 'a9', 'd9', 'a10', 'd10', 'a11', 'd11'];
 
 // add 'coming soon' class slot <td> id attributes to cell and other corresponding info 
 const comingSoonCells = [
@@ -72,7 +72,7 @@ const comingSoonCells = [
     {cell: 'b1', tier: Tiers.F, subject:Subjects.M},
     {cell: 'a6', tier: Tiers.F, subject:Subjects.S},
     {cell: 'b6', tier: Tiers.F, subject:Subjects.S},
-    {cell: 'c6', tier: Tiers.F, subject:Subjects.R},
+    {cell: 'c9', tier: Tiers.F, subject:Subjects.M},
     {cell: 'd6', tier: Tiers.F, subject:Subjects.R},
     {cell: 'b10', tier: Tiers.I, subject:Subjects.S}
 ];
@@ -120,13 +120,12 @@ const mathCourses = [
 
     new Course(Tiers.F, Subjects.M, "#01", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
 
-    new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
 
-    new Course(Tiers.F, Subjects.M, "#02", "Wednesday", "4:00-4:45", FM_Overview, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "c9"),
+    new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
 
     new Course(Tiers.I, Subjects.M, "- Ready to Test", "Thursday", "1:00-1:45", IM_Overview, LONDON_ZOOM, `Last-Minute Math: a live test-prep session.`, "img/rachaelc_v2.webp", "Rachael Chestnut", "rachael@laureladulted.org", LONDON_PHONE, "d5"),
     
-    new Course(Tiers.I, Subjects.M, "#05", "Thursday", "2:30-3:15", IM_Overview, LONDON_ZOOM, `${IM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "d7"),
+    new Course(Tiers.F, Subjects.M, "#02", "Thursday", "2:30-3:15", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/marks.webp", "Mark Sizemore", "mark@laureladulted.org", LONDON_PHONE, "d7"),
 ];
 
 const rlaCourses = [
@@ -243,6 +242,9 @@ function generateSubjectDiv(subject, container, parent) {
 function populateCellInfo(course) {
     let cell = document.getElementById(course.grid);
     cell.innerHTML = `${course.tier} ${course.subject}  <sl-icon name="${icons[course.tier][course.subject]}"></sl-icon>`;
+    if (course.special !== "") {
+        cell.innerHTML += `<br><span class="special">(${course.special})</span>`;
+    }
     cell.setAttribute('title', `Open the ${course.subject} tab above for more information`);
     cell.setAttribute('data-anchor', course.id);
     const classes = addCellStyling(icons[course.tier][course.subject]);
