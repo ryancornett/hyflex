@@ -101,16 +101,14 @@ const IR_Folder = "https://drive.google.com/drive/folders/12Mbu_OEbHHqJpKtGm_jDh
 const IS_Overview = "This course builds skills in reading, analyzing, and interpreting social studies and science information. You'll learn to examine sources, evaluate data, identify cause and effect, and support conclusions using evidence."
 const IS_Folder = "https://drive.google.com/drive/folders/1yg6CiJh6J3HHAJ0dciyBS21t9JqfLhTH"
 
-// Keep these for adding bold, red notes in a new line below the course overview ('description' property of the Course object); place ${NOTE_STATE}--your message--${NOTE_END} before the closing backtick
+// Keep these for adding bold, red notes in a new line below the course overview ('description' property of the Course object); place ${NOTE_START}--your message--${NOTE_END} before the closing backtick
 const NOTE_START = "<p class='course-note'><b>";
 const NOTE_END = "</b></p>"
 
 const mathCourses = [
-    // new Course(Tiers.F, Subjects.M, "#01", "Monday", "9:00-9:45", FM_Folder, LONDON_ZOOM, `${FM_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a1"),
+    new Course(Tiers.I, Subjects.M, "#01", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a3"),
 
-    new Course(Tiers.I, Subjects.M, "#01", "Monday", "10:30-11:15", FM_Folder, CORBIN_ZOOM, `${IM_Overview}${NOTE_START}No class October 12-19${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a3"),
-
-    new Course(Tiers.F, Subjects.M, "- Ready to Test", "Monday", "11:15-12:00", FM_Folder, LONDON_ZOOM, `The First Five: math without a calculator.${NOTE_START}No class October 12-19${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a4"),
+    new Course(Tiers.F, Subjects.M, "- Ready to Test", "Monday", "11:15-12:00", FM_Folder, LONDON_ZOOM, `The First Five: math without a calculator.`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "a4"),
 
     new Course(Tiers.I, Subjects.M, "#02", "Tuesday", "10:30-11:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "b3"),
     
@@ -118,7 +116,7 @@ const mathCourses = [
 
     new Course(Tiers.I, Subjects.M, "#03", "Tuesday", "5:30-6:15", IM_Folder, CLAY_ZOOM, `${IM_Overview}`, "img/rodneyl.webp", "Rodney Lipps", "rodney@laureladulted.org", CLAY_PHONE, "b11"),
 
-    new Course(Tiers.F, Subjects.M, "#01", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}${NOTE_START}No class October 12-19${NOTE_END}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
+    new Course(Tiers.F, Subjects.M, "#01", "Wednesday", "1:00-1:45", FM_Folder, CORBIN_ZOOM, `${FM_Overview}`, "img/jenniferl.webp", "Jennifer Ledford", "jennifer@laureladulted.org", CORBIN_PHONE, "c5"),
 
 
     new Course(Tiers.I, Subjects.M, "#04", "Wednesday", "2:30-3:15", IM_Folder, CORBIN_ZOOM, `${IM_Overview}`, "img/erinm.webp", "Erin Moses", "erin@laureladulted.org", CORBIN_PHONE, "c7"),
@@ -131,11 +129,7 @@ const mathCourses = [
 const rlaCourses = [
     new Course(Tiers.I, Subjects.R, "#01", "Monday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "a2"),
 
-    // new Course(Tiers.F, Subjects.R, "#01", "Monday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "a4"),
-
     new Course(Tiers.I, Subjects.R, "#02", "Tuesday", "9:45-10:30", IR_Folder, CLAY_ZOOM, `${IR_Overview}`, "img/ryanc.webp", "Ryan Cornett", "ryan@laureladulted.org", CLAY_PHONE, "b2"),
-
-    // new Course(Tiers.F, Subjects.R, "#02", "Tuesday", "11:15-12:00", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/mickeyy.webp", "Mickey York", "mickey@laureladulted.org", LONDON_PHONE, "b4"),
 
     // new Course("Foundational RLA #3", "Wednesday", "1:45-2:30", FR_Folder, LONDON_ZOOM, `${FR_Overview}`, "img/icon-person.svg", "TBA", "info@laureladulted.org", LONDON_PHONE),
 
